@@ -3,7 +3,7 @@
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px; /*з приводу падінгів треба обговорити*/
 }
 
 /* Styles for Tablet devices */
