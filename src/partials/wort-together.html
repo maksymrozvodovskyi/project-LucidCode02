@@ -1,1 +1,37 @@
-<section class=""></section>
+<section class="work-together-section">
+    <div class="container">
+        <div class="title-section">
+            <img src="../img/work-together/image.png" alt="User Avatar" class="avatar">
+            <h1>LET'S <span class="accent">WORK</span> TOGETHER</h1>
+        </div>
+
+        <form id="contactForm">
+            <div class="input-form">
+                <input type="email" id="email" name="email" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required
+                    placeholder="clients@gmail.com">
+            </div>
+
+            <div class="input-form">
+                <input type="text" id="comments" name="comments" placeholder="comments">
+            </div>
+
+            <button type="submit" class="send-btn">Send</button>
+        </form>
+
+        <div class="contact-links">
+            <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+            <a href="tel:+380111111111">+380 11 1111 11 11</a>
+        </div>
+    </div>
+</section>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <svg class="close-btn" width="24" height="24">
+          <use href="../public/sprite.svg#icon-close"></use>
+        </svg>
+        <h2>Thank you for your interest in cooperation!</h2>
+        <p>The manager will contact you shortly to discuss further details and opportunities for cooperation. Please
+            stay in touch.</p>
+    </div>
+</div>
