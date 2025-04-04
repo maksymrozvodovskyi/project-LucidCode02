@@ -233,7 +233,7 @@
 }
 @media only screen and (min-width: 1440px) {
   .about-me-descr-item-about-role {
-    width: 284px; 
+    width: 284px;
     margin-right: 396px;
     margin-left: auto;
   }
@@ -245,7 +245,6 @@
 }
 @media only screen and (min-width: 1440px) {
   .about-me-role-list {
-       
   }
 }
 .about-me-descr-item-about-education {
