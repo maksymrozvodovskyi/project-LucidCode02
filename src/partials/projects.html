@@ -1,8 +1,10 @@
 <section class="projects">
   <h2 class="projects-title">Projects</h2>
+
   <div class="swiper">
-    <ul class="swiper-wrapper">
-      <li class="swiper-slide">
+    <div class="swiper-wrapper">
+      <!-- Слайд 1 -->
+      <div class="swiper-slide">
         <div class="project-card">
           <div class="list-tags">
             <ul class="tags">
@@ -31,8 +33,10 @@
             alt="project1"
           />
         </div>
-      </li>
-      <li class="swiper-slide">
+      </div>
+
+      <!-- Слайд 2 -->
+      <div class="swiper-slide">
         <div class="project-card">
           <div class="list-tags">
             <ul class="tags">
@@ -55,15 +59,17 @@
         <div class="card-black">
           <img
             srcset="
-              ../img/projects/22slidemob@1x.jpg,
-              ../img/projects/2slidemob@2x      2x
+              ../img/projects/2slidemob@1x.jpg,
+              ../img/projects/2slidemob@2x     2x
             "
             alt="project2"
             width="311"
           />
         </div>
-      </li>
-      <li class="swiper-slide">
+      </div>
+
+      <!-- Слайд 3 -->
+      <div class="swiper-slide">
         <div class="project-card">
           <div class="list-tags">
             <ul class="tags">
@@ -93,9 +99,14 @@
             width="311"
           />
         </div>
-      </li>
-    </ul>
+      </div>
+    </div>
+
+    <!-- Пагінація (крапки) -->
+    <div class="swiper-pagination"></div>
   </div>
+
+  <!-- Кнопки навігації -->
   <div class="slider-buttons">
     <button class="slider-arrow prev" type="button">
       <svg class="icon">
@@ -109,5 +120,4 @@
       </svg>
     </button>
   </div>
-  <div class="swiper-pagination"></div>
 </section>

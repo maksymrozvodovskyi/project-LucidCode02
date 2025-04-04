@@ -10,7 +10,6 @@ height: 952px;
 }
 
 .projects-title {
-font-family: "Inter Tight", sans-serif;
 font-weight: 600;
 font-size: 16px;
 line-height: 1.5;
@@ -19,6 +18,7 @@ letter-spacing: -0.02em;
 color: rgba(250, 250, 250, 0.4);
 text-align: left;
 padding-left: 16px;
+padding-bottom: 32px;
 }
 
 
@@ -35,7 +35,7 @@ padding-left: 16px;
 }
 
 .swiper-slide {
-    width: 343px;
+    width:100%;
      border-radius: 24px;
     background: #fafafa;
 }
@@ -55,7 +55,6 @@ padding-left: 16px;
     gap: 6px;
     width: 279px;
     height: 96px;
-    font-family: "Inter Tight", sans-serif;
     font-weight: 500;
      font-size: 16px;
     letter-spacing: -0.02em;
@@ -93,8 +92,9 @@ padding-left: 16px;
 }
 .card-black{
     border-radius: 0 0 24px 24px;
-    /*width: 343px;*/
-     height: 395px;
+    max-width:343px;
+    width: 100%;
+    height: 395px;
     background: #242527;
     padding-top: 100px;
     padding-left: 16px;
@@ -103,7 +103,6 @@ padding-left: 16px;
 }
 
 .name-project{
-font-family: "Inter Tight", sans-serif;
 font-weight: 500;
 font-size: 24px;
 line-height: 1.16667;
@@ -120,7 +119,6 @@ width: 141px;
 height: 45px;
 background: #ed3b44;
 color: #fafafa;
-font-family: "Inter Tight", sans-serif;
 font-weight: 500;
 font-size: 16px;
 letter-spacing: -0.02em;
@@ -128,13 +126,6 @@ border: none;
 cursor: pointer;
 margin-left: 32px;
 margin-bottom: 32px;}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
-}
 
 .slider-arrow-prev,
 .slider-arrow-next {
