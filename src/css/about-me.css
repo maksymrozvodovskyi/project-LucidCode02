@@ -46,12 +46,13 @@
 @media only screen and (min-width: 768px) {
   .about-me-title-text-box {
     padding: 64px;
+    height: 700px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .about-me-title-text-box {
     width: 50%;
-    /* height: 100%; */
+    height: 700px;
   }
 }
 .about-me-title-text {
@@ -83,6 +84,7 @@
 @media only screen and (min-width: 1440px) {
   .about-me-portfolio {
     width: 50%;
+    height: 700px;
   }
 }
 .about-me-title-img {
@@ -91,13 +93,19 @@
   object-fit: cover;
   border-radius: 24px;
 }
+@media only screen and (min-width: 768px) {
+  .about-me-title-img {
+    height: 700px;
+  }
+}
+
 .about-me-descr {
   margin-bottom: 32px;
 }
 @media only screen and (min-width: 768px) {
   .about-me-descr {
     margin-bottom: 64px;
-      }
+  }
 }
 @media only screen and (min-width: 1440px) {
   .about-me-descr {
@@ -109,30 +117,40 @@
   flex-direction: column;
   gap: 20px;
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 768px) {
   .about-me-descr-list {
     gap: 32px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .about-me-descr-list {
+  }
+}
 .about-me-descr-item {
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-  padding-bottom: 20px;
+  min-height: 68px;
+  /* padding-bottom: 20px; */
+}
+@media only screen and (min-width: 768px) {
+  .about-me-descr-item {
+    /* padding-bottom: 32px; */
+    min-height: 72px;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .about-me-descr-item {
-    padding-bottom: 32px;
+    /* padding-bottom: 32px; */
   }
 }
 .about-me-descr-item-box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
 }
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .about-me-descr-item-box {
     margin-bottom: 8px;
   }
-}
+} */
 /* @media only screen and (min-width: 1440px) {
    {
   }
@@ -173,24 +191,75 @@
 }
 
 .about-me-descr-item-about-descr {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .about-me-descr-item-about-descr {
+    margin-top: 8px;
+    margin-bottom: 32px;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .about-me-descr-item-about-descr {
-    width: 612px;
+    max-width: 612px;
     margin-right: 68px;
     margin-left: auto;
+  }
+}
+.about-me-descr-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .about-me-descr-item-list {
+    gap: 16px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .about-me-descr-item-list {
     gap: 32px;
   }
 }
 .about-me-descr-item-about-role {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .about-me-descr-item-about-role {
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .about-me-descr-item-about-role {
+    width: 284px; 
+    margin-right: 396px;
+    margin-left: auto;
+  }
+}
+.about-me-role-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+@media only screen and (min-width: 1440px) {
+  .about-me-role-list {
+       
+  }
+}
 .about-me-descr-item-about-education {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 1440px) {
+  .about-me-descr-item-about-education {
+    max-width: 465px;
+    margin-right: 215px;
+    margin-left: auto;
+  }
+}
+.about-me-education-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
