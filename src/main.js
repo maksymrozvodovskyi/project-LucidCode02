@@ -1,3 +1,4 @@
+import "./js/reviews";
 import './js/header.js';
 import './js/hero.js';
 import './js/about-me.js';
