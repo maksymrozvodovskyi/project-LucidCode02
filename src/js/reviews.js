@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
@@ -10,7 +10,6 @@ axios.defaults.baseURL = "https://portfolio-js.b.goit.study/api";
 
 async function getImagesByQuery() {
     const response = await axios.get("/reviews")
-    
     if (response.data.length === 0) {
         throw new Error('Sorry, there are no other reviews');
     } else {
@@ -21,7 +20,6 @@ async function getImagesByQuery() {
 async function createreviews() {
     try {
         const data = await getImagesByQuery();
-        console.log(data);
         const swiperWriper = document.querySelector(".reviews-section .swiper-wrapper");
         const markup = data
             .map((el) =>
@@ -50,13 +48,16 @@ async function createreviews() {
 
 createreviews();
 
-const swiper = new Swiper('.reviews-section .swiper', {
+const reviewsSwiper = new Swiper('.reviews-section .swiper', {
     direction: 'horizontal',
-    modules: [Navigation],
+    modules: [Navigation, Keyboard],
     spaceBetween: 16,
     navigation: {
         nextEl: '.reviews-section .swiper-button-next',
         prevEl: '.reviews-section .swiper-button-prev',
+    },
+    keyboard: {
+        enabled: true,
     },
     breakpoints: {
     // when window width is >= 320px
@@ -64,14 +65,44 @@ const swiper = new Swiper('.reviews-section .swiper', {
         slidesPerView: 1,
         allowTouchMove: true
     },
-    // when window width is >= 480px
+    // when window width is >=768px
     768: {
       slidesPerView: 2
     },
-    // when window width is >= 640px
+    // when window width is >= 1440px
     1440: {
         slidesPerView: 4,
         allowTouchMove: false
     }
   }
+});
+
+let isInViewport = false;
+
+const observer = new IntersectionObserver(
+  ([entry]) => {
+        isInViewport = entry.isIntersecting;
+  },
+  { threshold: 0.5 } 
+);
+const reviewsSwiperElement = document.querySelector('.reviews-section .swiper')
+observer.observe(reviewsSwiperElement);
+
+let direction;
+document.addEventListener("keydown", (event) => {
+    if (!isInViewport) return;
+    const leftButton = document.querySelector(".swiper-button-prev");
+    const rightButton = document.querySelector(".swiper-button-next");
+    if (leftButton.classList.contains("swiper-button-disabled")) {
+        direction = "right";
+    } else if (rightButton.classList.contains("swiper-button-disabled")) {
+        direction = "left";
+    };
+    if (event.key === "Tab" && direction === "right") {
+        event.preventDefault();
+        reviewsSwiper.slideNext();
+    } else if (event.key === "Tab" && direction === "left") {
+        event.preventDefault();
+        reviewsSwiper.slidePrev();
+    }
 });
