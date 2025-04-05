@@ -7,7 +7,8 @@
   color: #fafafa;
   width: 343px;
   align-self: flex-start;
-  white-space: pre-line;
+
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -19,9 +20,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  /* transform: rotate(-180deg); */
 
   background-image: url('../img/hero/glasseffect@1x.png'),
-    linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+    linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
     url('../img/hero/rectangle_mob@1x.png');
   background-size: 578px auto, cover, cover;
   background-position: -268px top, center, center;
@@ -94,7 +96,7 @@
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-container {
     background-image: url('../img/hero/glasseffect@2x.png'),
-      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+      linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
       url('../img/hero/rectangle_mob@2x.png');
     background-size: 578px auto, cover, cover;
     background-position: -268px top, center, center;
@@ -130,7 +132,7 @@
     padding: 300px 32px 32px;
     align-items: flex-start;
     background-image: url('../img/hero/glasseffect@1x.png'),
-      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+      linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
       url('../img/hero/rectangle_tablet@1x.png');
     background-size: 728px auto, cover, cover;
     background-position: -147px top, center, center;
@@ -140,7 +142,7 @@
     (min-resolution: 2dppx) {
     .hero-container {
       background-image: url('../img/hero/glasseffect@2x.png'),
-        linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+        linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
         url('../img/hero/rectangle_tablet@2x.png');
       background-size: 728px auto, cover, cover;
       background-position: -147px top, center, center;
@@ -155,7 +157,7 @@
     padding: 300px 178px 32px;
     margin: 0 auto;
     background-image: url('../img/hero/glasseffect@1x.png'),
-      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+      linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
       url('../img/hero/rectangle_desktop@1x.png');
     background-size: auto, cover, cover;
     background-position: top left, center, center;
@@ -172,7 +174,7 @@
     (min-resolution: 2dppx) {
     .hero-container {
       background-image: url('../img/hero/glasseffect@2x.png'),
-        linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+        linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
         url('../img/hero/rectangle_desktop@2x.png');
       background-size: 728px auto, cover, cover;
       background-position: top left, center, center;
