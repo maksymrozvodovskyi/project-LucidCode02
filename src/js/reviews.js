@@ -20,7 +20,6 @@ async function getImagesByQuery() {
 async function createreviews() {
   try {
     const data = await getImagesByQuery();
-    console.log(data);
     const swiperWriper = document.querySelector(
       '.reviews-section .swiper-wrapper'
     );
