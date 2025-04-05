@@ -5,8 +5,7 @@ import { Navigation, Keyboard } from 'swiper/modules';
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-
-axios.defaults.baseURL = "https://portfolio-js.b.goit.study/api";
+axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
 async function getImagesByQuery() {
     const response = await axios.get("/reviews")
@@ -17,21 +16,27 @@ async function getImagesByQuery() {
     }
 
 }
+
 async function createreviews() {
     try {
         const data = await getImagesByQuery();
-        const swiperWriper = document.querySelector(".reviews-section .swiper-wrapper");
+        const swiperWriper = document.querySelector(
+            '.reviews-section .swiper-wrapper'
+        );
         const markup = data
-            .map((el) =>
+            .map(
+            el =>
                 `<li class="swiper-slide">
-                <img src="${el.avatar_url}" alt="photo of ${el.author}" class="review-photo">
-                <p class="review-name">${el.author}</p>
-                <p class="review-text">${el.review}</p>
-            </li>`
-                
-            )
-            .join("");
-        swiperWriper.insertAdjacentHTML("beforeend", markup)
+
+                        <img src="${el.avatar_url}" alt="photo of ${el.author}" class="review-photo">
+                        <p class="review-name">${el.author}</p>
+                        <p class="review-text">${el.review}</p>
+                    </li>`
+
+                        
+                    )
+                    .join("");
+        swiperWriper.insertAdjacentHTML("beforeend", markup);
     }
     catch (error) {
         const swiperWriper = document.querySelector(".reviews-section .swiper-wrapper");
@@ -62,12 +67,12 @@ const reviewsSwiper = new Swiper('.reviews-section .swiper', {
     breakpoints: {
     // when window width is >= 320px
     320: {
-        slidesPerView: 1,
-        allowTouchMove: true
+      slidesPerView: 1,
+      allowTouchMove: true,
     },
     // when window width is >=768px
     768: {
-      slidesPerView: 2
+      slidesPerView: 2,
     },
     // when window width is >= 1440px
     1440: {
