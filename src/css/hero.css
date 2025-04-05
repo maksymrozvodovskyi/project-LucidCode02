@@ -7,7 +7,6 @@
   color: #fafafa;
   width: 343px;
   align-self: flex-start;
-
   margin: 0 auto;
 }
 
@@ -20,7 +19,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  /* transform: rotate(-180deg); */
+ 
 
   background-image: url('../img/hero/glasseffect@1x.png'),
     linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
@@ -66,8 +65,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  /* gap: 10px; */
-  border: 1px solid rgba(250, 250, 250, 0.2);
+   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px 8px;
   width: 37px;
@@ -166,8 +164,6 @@
   .hero-tittle {
     width: 1084px;
     font-size: 90px;
-
-    white-space: pre-line;
     text-align: left;
   }
   @media only screen and (min-width: 1440px) and (min-resolution: 192dpi),
