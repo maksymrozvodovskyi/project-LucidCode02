@@ -9,7 +9,7 @@ import "izitoast/dist/css/iziToast.min.css";
 axios.defaults.baseURL = "https://portfolio-js.b.goit.study/api";
 
 async function getImagesByQuery() {
-    const response = await axios.get("/revies")
+    const response = await axios.get("/reviews")
     
     if (response.data.length === 0) {
         throw new Error('Sorry, there are no other reviews');
