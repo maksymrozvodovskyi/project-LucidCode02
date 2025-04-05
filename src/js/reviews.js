@@ -1,12 +1,15 @@
 import axios from 'axios';
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation} from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+
 
 axios.defaults.baseURL = "https://portfolio-js.b.goit.study/api";
 
 async function getImagesByQuery() {
-    const response = await axios.get("/reviews")
+    const response = await axios.get("/revies")
     
     if (response.data.length === 0) {
         throw new Error('Sorry, there are no other reviews');
@@ -33,7 +36,14 @@ try {
     swiperWriper.insertAdjacentHTML("beforeend", markup)
 }
 catch (error) {
-    console.log(error);
+    const swiperWriper = document.querySelector(".reviews-section .swiper-wrapper");
+    swiperWriper.insertAdjacentHTML("beforeend", '<p class="reviews-error">Not found</p>');
+    iziToast.show({
+                    title: 'Error',
+                    message: error.message,
+                    color: 'red',
+                    position: "topRight"
+                });
 }
            
 
