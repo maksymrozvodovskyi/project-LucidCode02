@@ -18,35 +18,37 @@ async function getImagesByQuery() {
     }
 
 }
-
-try {
-    const data = await getImagesByQuery();
-    console.log(data);
-    const swiperWriper = document.querySelector(".reviews-section .swiper-wrapper");
-    const markup = data
-        .map((el) =>
-            `<li class="swiper-slide">
+async function createreviews() {
+    try {
+        const data = await getImagesByQuery();
+        console.log(data);
+        const swiperWriper = document.querySelector(".reviews-section .swiper-wrapper");
+        const markup = data
+            .map((el) =>
+                `<li class="swiper-slide">
                 <img src="${el.avatar_url}" alt="photo of ${el.author}" class="review-photo">
                 <p class="review-name">${el.author}</p>
                 <p class="review-text">${el.review}</p>
             </li>`
                 
-        )
-        .join("");
-    swiperWriper.insertAdjacentHTML("beforeend", markup)
-}
-catch (error) {
-    const swiperWriper = document.querySelector(".reviews-section .swiper-wrapper");
-    swiperWriper.insertAdjacentHTML("beforeend", '<p class="reviews-error">Not found</p>');
-    iziToast.show({
-                    title: 'Error',
-                    message: error.message,
-                    color: 'red',
-                    position: "topRight"
-                });
-}
+            )
+            .join("");
+        swiperWriper.insertAdjacentHTML("beforeend", markup)
+    }
+    catch (error) {
+        const swiperWriper = document.querySelector(".reviews-section .swiper-wrapper");
+        swiperWriper.insertAdjacentHTML("beforeend", '<p class="reviews-error">Not found</p>');
+        iziToast.show({
+            title: 'Error',
+            message: error.message,
+            color: 'red',
+            position: "topRight"
+        });
+    }
            
+}
 
+createreviews();
 
 const swiper = new Swiper('.reviews-section .swiper', {
     direction: 'horizontal',
