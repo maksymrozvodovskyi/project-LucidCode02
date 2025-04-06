@@ -1,0 +1,149 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.header-container {
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 32px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-logo-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header-logo-container img {
+  border-radius: 18px;
+  margin-right: 8px;
+}
+
+.header-logo-name {
+  color: #fafafa;
+  margin: 0;
+  font-size: 16px;
+}
+
+.header-nav-container {
+  display: none;
+}
+
+.header-nav-order {
+  display: none;
+}
+.header-menu-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.header-icon-menu {
+  stroke: #fafafa;
+  stroke-width: 2px;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .header-logo-name {
+    font-size: 18px;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 151px;
+  }
+
+  .header-menu-button {
+    display: none;
+  }
+
+  .header-nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+  }
+
+  .header-nav-button {
+    width: 60px;
+    height: 39px;
+    background: none;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    /* text-decoration-skip-ink: none; */
+    color: #fafafa;
+    display: inline-block;
+  }
+  .header-nav-list {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:  transparent;
+   
+    width: 67px;
+    z-index: 999;
+  }
+  /* .header-nav-list.visually-hidden {
+    display: none !important; 
+  }
+
+  .header-nav-list.visually-hidden.is-open { 
+    display: block !important;
+  }  */
+  .header-nav-item {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+  }
+  .header-nav-list-items {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+  }
+
+  .header-nav-order {
+    display: block;
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+    background-color: #ed3b44;
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    text-decoration: none;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header-content {
+    gap: 487px;
+  }
+}
