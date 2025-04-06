@@ -1,5 +1,4 @@
 .about-me {
-  font-family: 'Inter Tight', sans-serif;
   background-color: #1c1d20;
   color: #fafafa;
   padding-top: 64px;
@@ -63,6 +62,7 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
+  /* width: 105%; */
 }
 @media only screen and (min-width: 768px) {
   .about-me-title-text {
@@ -176,12 +176,14 @@
 
 .about-me-uparrow,
 .about-me-downarrow {
-  /* border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 50px; */
-  /* padding: 10px; */
   width: 20px;
   height: 20px;
-  /* background-color: #1c1d20; */
+}
+.about-me-descr-item:not(.is-active) .about-me-uparrow {
+  transform: rotate(180deg);
+}
+.is-active .about-me-downarrow {
+  transform: rotate(180deg);
 }
 .about-me-descr-item-about-text {
   font-weight: 500;
@@ -233,7 +235,7 @@
 }
 @media only screen and (min-width: 1440px) {
   .about-me-descr-item-about-role {
-    width: 284px; 
+    width: 284px;
     margin-right: 396px;
     margin-left: auto;
   }
@@ -245,7 +247,6 @@
 }
 @media only screen and (min-width: 1440px) {
   .about-me-role-list {
-       
   }
 }
 .about-me-descr-item-about-education {
@@ -298,6 +299,15 @@
     margin-right: 72px;
   }
 }
+/* .test {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center
+} */
 .about-me-swiper-list-item {
   width: 130px;
   height: 130px;
@@ -358,3 +368,37 @@
   .swiper-next-arrow {
   }
 }
+
+/* #region Accordion reset */
+.accordion-container .ac .ac-trigger::after {
+  content: none;
+}
+.accordion-container .ac {
+  --color-white: #fff;
+  --color-light-grey: #eee;
+  --color-grey: #8a8a8a;
+  --color-black: #111;
+  margin-bottom: 8px;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: #1c1d20;
+}
+
+.accordion-container .ac .ac-panel .ac-text {
+  font: 16px / 24px 'Inter Tight', sans-serif;
+  color: #fafafa;
+  padding: 0;
+  margin: 0;
+}
+.accordion-container .ac .ac-trigger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50px;
+  background-color: #1c1d20;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
