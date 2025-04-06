@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nextBtn = document.querySelector('.slider-arrow.next');
   const prevBtn = document.querySelector('.slider-arrow.prev');
 
-  // Початковий стан: наприклад, next активна
+
   nextBtn.classList.add('active');
 
   nextBtn.addEventListener('click', () => {

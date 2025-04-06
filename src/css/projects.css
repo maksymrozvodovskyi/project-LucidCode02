@@ -9,18 +9,18 @@ width: 100%;
 height: 952px;
 }
 @media only screen and (min-width:768px) {
-    .projects{
-    width: 704px;
-    height: 1379px;
+.projects{
+width: 704px;
+height: 1379px;
 }}
 
 @media only screen and (min-width:1440px) {
-    .projects {
-        width: 100%;
-        max-width: 1376px;
-        height: auto;
-        margin: 0 auto;
-    }
+.projects {
+width: 100%;
+max-width: 1376px;
+height: auto;
+margin: 0 auto;
+}
 }
 
 .projects-title {
@@ -35,7 +35,6 @@ padding-left: 16px;
 padding-bottom: 32px;
 }
 
-
 .swiper {
  margin: auto;
  overflow: hidden;
@@ -43,43 +42,39 @@ padding-bottom: 32px;
 }
 
 @media only screen and (min-width:768px) {
-    .swiper{
-        height: 1191px;
-    }
-    
-}
+.swiper{
+height: 1191px;
+    }}
 
 @media only screen and (min-width:1440px) {
-    .swiper {
-        height: 625px;
-    
-
-    }
-}
+.swiper {
+ height: 625px;
+    }}
 
 .swiper-wrapper {
  display: flex;
 }
 
 .swiper-slide {
-    width:100%;
-     border-radius: 24px;
-    background: #fafafa;
+width:100%;
+ border-radius: 24px;
+background: #fafafa;
+border: none;
 }
 
 @media only screen and (min-width:1440px) {
-    .swiper-slide{
-    display: flex !important;
-    flex-direction: row;
-     gap:20px;
-     align-items:flex-start;
-     max-width: 1376px;
-    }
-}
+.swiper-slide{
+display: flex !important;
+flex-direction: row;
+gap:20px;
+align-items:flex-start;
+max-width: 1376px;
+    }}
+
 .project-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+display: flex;
+ flex-direction: column;
+align-items: flex-start;
 }
 
 .project-card,
@@ -89,65 +84,66 @@ padding-bottom: 32px;
 
 
 .list-tags{
-    padding: 32px 32px 0 32px;
+padding: 32px 32px 0 32px;
 }
+
 .tags {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 6px;
-    width: 279px;
-    height: 96px;
-    font-weight: 500;
-     font-size: 16px;
-    letter-spacing: -0.02em;
-    color: #1c1d20;
-    justify-content: flex-start;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 6px;
+width: 279px;
+height: 96px;
+font-weight: 500;
+ font-size: 16px;
+letter-spacing: -0.02em;
+color: #1c1d20;
+justify-content: flex-start;
 }
+
 @media only screen and (min-width:768px) {
-    .tags {
-        display: flex;
-        flex-direction: row;
-        width: 312px;
-        height: 55px;
-    }
-}
+.tags {
+display: flex;
+flex-direction: row;
+width: 312px;
+height: 55px;
+    }}
 
 
 .tag-react{
-    border: 1px solid rgba(28, 29, 32, 0.2);
-    border-radius: 60px;
-    padding: 13px 18px;
-    width: 80px;
-    height: 45px;
+border: 1px solid rgba(28, 29, 32, 0.2);
+border-radius: 60px;
+padding: 13px 18px;
+width: 80px;
+height: 45px;
 }
 .tag-js{
-    border: 1px solid rgba(28, 29, 32, 0.2);
-    border-radius: 60px;
-    padding: 13px 18px;
-    width: 57px;
-    height: 45px;
+border: 1px solid rgba(28, 29, 32, 0.2);
+border-radius: 60px;
+padding: 13px 18px;
+width: 57px;
+height: 45px;
 }
 
 .tag-node{
-    border: 1px solid rgba(28, 29, 32, 0.2);
-    border-radius: 60px;
-    padding: 13px 18px;
-    width: 94px;
-    height: 45px;
+border: 1px solid rgba(28, 29, 32, 0.2);
+border-radius: 60px;
+padding: 13px 18px;
+width: 94px;
+height: 45px;
 }
 .tag-git{
-    border: 1px solid rgba(28, 29, 32, 0.2);
-        border-radius: 60px;
-        padding: 13px 18px;
-        width: 63px;
-        height: 45px;
+border: 1px solid rgba(28, 29, 32, 0.2);
+border-radius: 60px;
+padding: 13px 18px;
+width: 63px;
+height: 45px;
 }
 .card-black{
 display: flex;
 border-radius: 0 0 24px 24px;
 width: 100%;
- height: 395px;
+height: 395px;
 background: #242527;
 justify-content: center;
 align-items: center;
@@ -155,50 +151,42 @@ align-items: center;
 }
 
 @media only screen and (min-width:768px){
-    .card-black{
-   
-    height: 625px;
-    }
-    
-}
+.card-black{
+   height: 625px;
+    }}
 
 @media only screen and (min-width:1440px) {
-    .card-black {
+.card-black {
 border-radius: 0 24px 24px 0;
-        
-    }
-
-}
+    }}
 
 img {
-    width: 100%;
-    height: auto;
-    display: block;
+width: 100%;
+height: auto;
+display: block;
 }
 
 .name-project{
 font-weight: 500;
 font-size: 24px;
 line-height: 1.16667;
- letter-spacing: -0.03em;
+letter-spacing: -0.03em;
 color: #1c1d20;
 padding: 96px 32px 32px 32px;
 text-align: left;
 }
 
-@media only screen and (min-width:768px){
-    .name-project{
-    font-size: 44px;
-    line-height: 1;
-    padding: 164px 146px 32px 64px;
-   }
-}
+@media only screen and (min-width:768px) {
+.name-project{
+font-size: 44px;
+line-height: 1;
+padding: 164px 146px 32px 64px;
+   }}
 
 @media only screen and (min-width:1440px) {
-    .name-project {
-        padding: 223px 130px 32px 64px; 
-    }
-}
+.name-project {
+padding: 223px 130px 32px 64px; 
+    }}
 
 .btn {
  border-radius: 60px;
@@ -217,56 +205,55 @@ margin-bottom: 32px;
 cursor: pointer;}
 
 @media only screen and (min-width:768px){
-    .btn{
-     padding: 18px 50px;
-    width: 177px;
-    height: 55px;
-    margin-left: 64px;
-    margin-bottom: 64px;
-    }
-}
-
+.btn{
+padding: 18px 50px;
+width: 177px;
+height: 55px;
+margin-left: 64px;
+margin-bottom: 64px;
+    }}
 
 .btn:hover, .btn:focus{
-    background: #e0373f;
+background: #e0373f;
 }
 
 Дезактивація кнопок 
 .swiper-button-disabled {
-    opacity: 0.5;
-    filter: grayscayle(100%);
+opacity: 0.5;
+filter: grayscayle(100%);
 }
 .slider-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 32px;
+display: flex;
+justify-content: center;
+gap: 12px;
+margin-top: 32px;
 }
+
 .slider-arrow-next,.slider-arrow-prev {
-    background-color: transparent;
-    padding: 8px;
-    color: #3b3b3b;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(250, 250, 250, 0.5);
-    border-radius: 60px;
-    padding: 14px;
-     width: 52px;
-    height: 52px;
-    pointer-events: auto;
+background-color: transparent;
+padding: 8px;
+color: #3b3b3b;
+opacity: 0.5;
+transition: all 0.3s ease;
+border: 1px solid rgba(250, 250, 250, 0.5);
+border-radius: 60px;
+padding: 14px;
+ width: 52px;
+ height: 52px;
+pointer-events: auto;
 }
 
 .slider-arrow-next,.slider-arrow-prev.active {
-    background-color:transparent;
-    color: #fafafa;
-    opacity: 1;
-    pointer-events: auto;
-    border: 1px solid rgba(250, 250, 250, 0.5);
+background-color:transparent;
+color: #fafafa;
+ opacity: 1;
+ pointer-events: auto;
+border: 1px solid rgba(250, 250, 250, 0.5);
 }
 
 .icon {
-    width:24px;
-    height: 24px;
-    stroke: rgba(250, 250, 250, 0.5);
-        fill: transparent;
+width:24px;
+height: 24px;
+stroke: rgba(250, 250, 250, 0.5);
+fill: transparent;
 }
