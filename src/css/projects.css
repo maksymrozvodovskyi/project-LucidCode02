@@ -17,7 +17,6 @@ height: 1379px;
 @media only screen and (min-width:1440px) {
 .projects {
 width: 100%;
-max-width: 1376px;
 height: auto;
 margin: 0 auto;
 }
@@ -57,8 +56,6 @@ height: 1191px;
 
 .swiper-slide {
 width:100%;
- border-radius: 24px;
-background: #fafafa;
 border: none;
 }
 
@@ -66,17 +63,25 @@ border: none;
 .swiper-slide{
 display: flex !important;
 flex-direction: row;
-gap:20px;
 align-items:flex-start;
 max-width: 1376px;
+outline: none;
     }}
 
 .project-card {
 display: flex;
  flex-direction: column;
 align-items: flex-start;
+background-color: #fafafa;
+border-radius: 24px 24px 0 0;
 }
 
+@media only screen and (min-width:1440px){
+.project-card{ 
+border-radius: 24px 0 0 24px;
+height: 625px;
+}
+}
 .project-card,
 .card-black {
     flex: 1 1 50%;
@@ -213,8 +218,8 @@ margin-left: 64px;
 margin-bottom: 64px;
     }}
 
-.btn:hover, .btn:focus{
-background: #e0373f;
+.btn:hover, .btn:active{
+background: #E0373F;
 }
 
 Дезактивація кнопок 
