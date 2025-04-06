@@ -1,22 +1,53 @@
 .work-together-section {
+    position: relative;
     padding: 32px 0;
     background-color: #1c1d20;
-    
+    overflow: hidden;
+    z-index: 0;
 }
+
+.work-together-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 100%;
+    background-image: url('../img/work-together/Glass\ effect\ 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    z-index: -1;
+    /* !!! фоновий рівень нижче за контент */
+    pointer-events: none;
+}
+
+
 @media screen and (min-width: 768px) {
     .work-together-section {
         padding: 88px 0 169px 0;
+    }
+
+    .work-together-section::after {
+        width: 200px;
+        /* планшет — 3 плоски */
     }
 }
 
 @media screen and (min-width: 1440px) {
     .work-together-section {
         padding: 80px 0 169px 0;
+        background-size: contain;
     }
-      .work-together-section .container {
-          padding: 0 196px;
-        }  
+
+    .work-together-section::after {
+        width: 414px;
     }
+
+    .work-together-section .container {
+        padding: 0 196px;
+    }
+}
 
 .avatar {
     display: inline;
@@ -35,18 +66,40 @@
     }
 }
 
+.title-section {
+    display: flex;
+    margin-bottom: 8px;
+}
+
 .footer-title {
     align-items: center;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: #fafafa;
-  display: inline;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+    display: inline;
 }
+
+.footer-titel-part {
+    align-items: center;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+    font-size: 40px;
+    margin-bottom: 63px;
+}
+
 @media screen and (min-width: 768px) {
     .footer-title {
+        font-size: 64px;
+        line-height: 64px;
+    }
+
+    .footer-titel-part {
         font-size: 64px;
         line-height: 64px;
     }
@@ -56,11 +109,6 @@
     color: #ed3b44;
 }
 
-.title-section {
-    margin-bottom: 63px;
-    display: block;
-    
-}
 @media screen and (min-width: 768px) {
     .title-section {
         margin-bottom: 18px;
@@ -228,7 +276,7 @@
     letter-spacing: -0.02em;
     color: #fafafa;
     transition: border-color 0.25s ease-in-out;
-    
+
 }
 
 .contact-links a:hover,
@@ -237,19 +285,17 @@
 }
 
 .contact-email {
-    margin-right: 4px;
     width: 178px;
     height: 37px;
 }
 
 .contact-phone {
-    padding: 10px 12px;
     width: 118px;
     height: 37px;
 }
 
 @media screen and (min-width: 768px) {
-    .contact-links a {
+    .contact-item {
         height: 55px;
         font-size: 16px;
         padding: 18px 32px;
