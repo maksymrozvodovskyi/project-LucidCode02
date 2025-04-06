@@ -20,10 +20,9 @@
 
 .benefits-section-title {
     color: rgba(250, 250, 250, 0.4);
-    font-family: Inter Tight;
     font-size: 16px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: -0.02em;
     text-align: left;
     text-transform: uppercase;
@@ -84,10 +83,9 @@
 
 .benefits-list-item-title {
     color: rgb(250, 250, 250);
-    font-family: Inter Tight;
     font-size: 20px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.5;
     letter-spacing: -0.02em;
     text-align: left;
     margin-bottom: 6px;
@@ -95,10 +93,9 @@
 
 .benefits-list-item-text {
     color: rgba(250, 250, 250, 0.6);
-    font-family: Inter Tight;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: -0.02em;
     text-align: left;
 }
@@ -116,7 +113,7 @@
     color: rgb(250, 250, 250);
     font-size: 16px;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 1.2;
     letter-spacing: -0.02em;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
