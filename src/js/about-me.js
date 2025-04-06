@@ -7,7 +7,12 @@ new Accordion('.accordion-container', {
   duration: 400,
   showMultiple: true,
   openOnInit: [0],
+  onOpen: function (currentElement) {
+    console.log(currentElement);
+  },
 });
+// const accordion = new Accordion('.accordion-container');
+// accordion.open(0);
 
 const swiper = new Swiper('.about-me-swiper-box', {
   direction: 'horizontal',
