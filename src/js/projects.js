@@ -1,28 +1,42 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import { Navigation,Keyboard } from 'swiper/modules';
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
-    loop: true,
     navigation: {
-      nextEl: '.slider-arrow.next',
-      prevEl: '.slider-arrow.prev',
+      nextEl: '.slider-arrow-next',
+      prevEl: '.slider-arrow-prev',
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+   
     keyboard: {
       enabled: true,
       onlyInViewport: true,
     },
-    breakpoints: {
-      768: { slidesPerView: 2 },
-      1440: { slidesPerView: 3 }
-    }
+   
+  modules: [Navigation, Keyboard],
+  });
+
+  const nextBtn = document.querySelector('.slider-arrow.next');
+  const prevBtn = document.querySelector('.slider-arrow.prev');
+
+  // Початковий стан: наприклад, next активна
+  nextBtn.classList.add('active');
+
+  nextBtn.addEventListener('click', () => {
+    nextBtn.classList.add('active');
+    prevBtn.classList.remove('active');
+  });
+
+  prevBtn.addEventListener('click', () => {
+    prevBtn.classList.add('active');
+    nextBtn.classList.remove('active');
   });
 });
+
+
