@@ -11,11 +11,15 @@ h2 {
     margin-top: 32px;
 }
 
+
+
 .accordion-container {
     width: 100%;
     margin: 0 !important;
     padding: 0 !important;
     gap: 0 !important;
+    display: flex;
+        flex-direction: column;
 }
 
 .ac .ac-trigger{
@@ -57,6 +61,7 @@ h2 {
     color: #fafafa;
     width: 100%;
     position: relative;
+    margin-top: 0 !important;
 }
 
 .ac-panel {
@@ -66,7 +71,7 @@ h2 {
 }
 
 .ac-panel p {
-    margin: 16px 0 20px;
+    margin-bottom:20px ;
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -75,13 +80,7 @@ h2 {
     color: rgba(250, 250, 250, 0.6);
 }
 
-.ac {
-    
-}
 
-.space{
-   
-}
 
 .ac-plus,
 .ac-minus {
@@ -89,12 +88,8 @@ h2 {
     height: 34px;
     font-size: 24px;
     border-radius: 50%;
-    
     right: 0;
-    /* або можна задати конкретний відступ, наприклад, right: 20px; */
     top:0;
-    /* Центрування по вертикалі */
-    /* transform: translateY(-50%); */
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +112,7 @@ h2 {
     display: inline-flex;
 }
 
-/* Прибираємо всі зайві бордери та тіні */
+
 .ac,
 .ac-header,
 .ac-trigger,
@@ -152,7 +147,145 @@ h2 {
 margin: 0 !important;
 }
 
+.br-md {
+    display: none;
+}
 
-@media only screen and (min-width: 768px) {}
 
-@media only screen and (min-width: 1440px) {}
+
+  .br-sm {
+      display: none;
+  }
+
+  .accordion-container {
+      display: flex;
+      flex-direction: column;
+  }
+
+ 
+  .accordion-container .ac {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      transition: border-color 0.3s ease;
+  }
+
+  .accordion-container .ac.is-open {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+     
+  }
+
+  
+  .accordion-container .ac:not(.is-open) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      
+  }
+
+
+
+
+@media only screen and (min-width: 768px) {
+.ac-panel p{
+margin-bottom: 24px;
+}
+
+.ac .ac-trigger{
+    padding-bottom: 26px !important;
+        padding-top: 32px !important;
+}
+
+  .br-md {
+      display: block;
+      height: 0;
+  }
+
+      
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .just {
+        display: flex;
+    }
+
+    .accordion-container {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ac {
+        width: 100%;
+        margin-bottom: 0 !important;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+    }
+
+    .ac-panel p {
+        margin-bottom: 26px;
+    }
+
+    .ac .ac-trigger {
+        padding-bottom: 21px !important;
+    }
+
+    .accordion-container:first-of-type .ac:nth-child(1),
+    .accordion-container:first-of-type .ac:nth-child(2),
+    .accordion-container:first-of-type .ac:nth-child(3) {
+        padding-right: 32px;
+        border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+    }
+
+    .second {
+        padding-left: 32px !important;
+    }
+
+    .js-enabled.is-open {
+        background-color: #1C1D20;
+    }
+
+    .ac.js-enabled {
+        background-color: #1C1D20;
+    }
+
+    .br-sm {
+        display: block;
+        height: 0;
+    }
+
+   
+    .accordion-container:nth-of-type(2) .ac.js-enabled {
+        background-color: #1C1D20;
+        
+    }
+
+
+    .accordion-container:first-of-type .ac:nth-child(1),
+    .accordion-container:first-of-type .ac:nth-child(2),
+    .accordion-container:first-of-type .ac:nth-child(3) {
+        padding-right: 32px;
+        border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+    }
+
+    
+    .js-enabled.is-open {
+        background-color: #1C1D20;
+    }
+
+    .ac.js-enabled {
+        background-color: #1C1D20;
+    }
+
+    .ac-panel {
+        transition: max-height 0.3s ease;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .ac.is-open .ac-panel {
+        max-height: 500px;
+    }
+
+    .third{
+        padding-left: 32px;
+    }
+}
