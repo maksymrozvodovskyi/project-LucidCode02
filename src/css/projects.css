@@ -10,7 +10,7 @@ height: 952px;
 }
 @media only screen and (min-width:768px) {
 .projects{
-width: 704px;
+width: 100%;
 height: 1379px;
 }}
 
