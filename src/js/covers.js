@@ -1,29 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const section = document.querySelectorAll('.section-covers');
-  const covers = document.querySelectorAll('.cover');
-  const evenRows = document.querySelectorAll('.row--even .cover');
-  const oddRows = document.querySelectorAll('.row--odd .cover');
+document.addEventListener('DOMContentLoaded', function () {
+  const evenRows = document.querySelectorAll('.row--even');
+  const oddRows = document.querySelectorAll('.row--odd');
 
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          if (entry.isIntersecting) {
-            covers.forEach(cover => {
-              evenRows.forEach(row => cover.classList.add('animate-right'));
-              oddRows.forEach(row => cover.classList.add('animate-left'));
-              observer.unobserve(entry.target);
-              // cover.classList.add('animated');
-            });
-          }
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-    }
-  );
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1,
+  };
 
-  section.forEach(section => observer.observe(section));
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      } else {
+        entry.target.classList.remove('animate');
+      }
+    });
+  }, observerOptions);
+
+  evenRows.forEach(row => {
+    observer.observe(row);
+  });
+
+  oddRows.forEach(row => {
+    observer.observe(row);
+  });
 });
