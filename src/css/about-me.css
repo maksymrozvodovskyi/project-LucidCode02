@@ -230,6 +230,12 @@
   margin-top: 12px;
   margin-bottom: 20px;
 }
+@media only screen and (min-width: 768px) {
+  .about-me-descr-item-about-education {
+    margin-top: 8px;
+    margin-bottom: 32px;
+  }
+}
 @media only screen and (min-width: 1440px) {
   .about-me-descr-item-about-education {
     max-width: 465px;
@@ -344,11 +350,7 @@
   content: none;
 }
 .accordion-container .ac {
-  --color-white: #fff;
-  --color-light-grey: #eee;
-  --color-grey: #8a8a8a;
-  --color-black: #111;
-  margin-bottom: 8px;
+  margin-bottom: 0;
   border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   background-color: #1c1d20;
