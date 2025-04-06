@@ -41,6 +41,3 @@ const nextBtnEl = document.querySelector(
 nextBtnEl.addEventListener('click', () => {
   swiper.slideNext();
 });
-
-// const swiper = document.querySelector('.about-me-swiper').swiper;
-// swiper.slideNext();

@@ -66,11 +66,6 @@
     line-height: 1.05;
   }
 }
-@media only screen and (min-width: 1440px) {
-  .about-me-title-text {
-    /* width: 552px; */
-  }
-}
 .about-me-title-text-spanfunc {
   color: #ed3b44;
 }
