@@ -301,6 +301,9 @@
   background-color: #ed3b44;
   border: none;
 }
+.about-me-swiper-list-item.swiper-slide.swiper-slide-active {
+  background-color: #ed3b44;
+}
 .about-me-left-arrow-btn {
   width: 28px;
   height: 28px;
@@ -318,7 +321,6 @@
   .about-me-left-arrow-btn {
   }
 }
-
 .about-me-swiper-next-arrow {
   width: 28px;
   height: 28px;
@@ -369,4 +371,4 @@
   height: 40px;
   padding: 0;
 }
-
+/* #endregion */
