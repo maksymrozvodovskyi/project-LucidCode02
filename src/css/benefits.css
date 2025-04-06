@@ -1,0 +1,124 @@
+@media only screen and (min-width: 1440px) {
+    .benefits-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+.benefits-section-title {
+    color: rgba(250, 250, 250, 0.4);
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    white-space: nowrap;
+}
+
+@media only screen and (min-width: 1440px) {
+    .benefits-section-title {
+        margin-right: 412px;
+    }
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+    .benefits-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .benefits-list {
+        justify-content: flex-start;
+    }
+}
+
+.benefits-list-item {
+    width: 344px;
+    border-radius: 20px;
+    background: rgb(36, 37, 39);
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 24px;
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .benefits-list-item {
+        width: 332px;
+    }
+}
+
+.benefits-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: rgb(237, 59, 68);
+}
+
+.benefits-list-item-title {
+    color: rgb(250, 250, 250);
+    font-family: Inter Tight;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.benefits-list-item-text {
+    color: rgba(250, 250, 250, 0.6);
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.benefits-btn {
+    width: 187px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 36px 18px 36px;
+    box-sizing: border-box;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+}
+
+.benefits-btn:hover,
+.benefits-btn:focus {
+    border: 1px solid rgb(250, 250, 250);
+}
+
+.benefits-btn-text {
+    color: rgb(250, 250, 250);
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+}
