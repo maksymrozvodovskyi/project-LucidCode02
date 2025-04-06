@@ -19,7 +19,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
- 
+  position: relative;
 
   background-image: url('../img/hero/glasseffect@1x.png'),
     linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
@@ -31,6 +31,9 @@
 
 .hero-social-links {
   align-self: flex-end;
+  position: absolute;
+  right: 16px;
+  padding-top: 212px;
 }
 
 .hero-social-links-list {
@@ -65,7 +68,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-   border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px 8px;
   width: 37px;
@@ -109,6 +112,12 @@
   }
   .hero-social-links-list {
     gap: 8px;
+  }
+  .hero-social-links {
+    align-self: flex-end;
+    padding-top: 187px;
+    position: absolute;
+    right: 32px;
   }
   .social-link,
   .email {
@@ -160,6 +169,10 @@
     background-size: auto, cover, cover;
     background-position: top left, center, center;
     background-repeat: repeat-y, no-repeat, no-repeat;
+  }
+  .hero-social-links {
+    align-self: flex-end;
+    padding-top: 243px;
   }
   .hero-tittle {
     width: 1084px;
