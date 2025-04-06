@@ -15,6 +15,8 @@
     padding-bottom: 164px;
   }
 }
+.section-title {
+}
 .about-me-title {
   display: flex;
   flex-direction: column;
@@ -53,12 +55,14 @@
   }
 }
 .about-me-title-text {
+  /* box-sizing: border-box; */
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
+  /* width: 105%; */
 }
 @media only screen and (min-width: 768px) {
   .about-me-title-text {
@@ -94,6 +98,7 @@
     height: 700px;
   }
 }
+
 .about-me-descr {
   margin-bottom: 32px;
 }
@@ -124,20 +129,32 @@
 .about-me-descr-item {
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   min-height: 68px;
+  /* padding-bottom: 20px; */
 }
 @media only screen and (min-width: 768px) {
   .about-me-descr-item {
+    /* padding-bottom: 32px; */
     min-height: 72px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .about-me-descr-item {
+    /* padding-bottom: 32px; */
   }
 }
 .about-me-descr-item-box {
   display: flex;
   justify-content: space-between;
 }
+/* @media only screen and (min-width: 768px) {
+  .about-me-descr-item-box {
+    margin-bottom: 8px;
+  }
+} */
+/* @media only screen and (min-width: 1440px) {
+   {
+  }
+} */
 .about-me-descr-item-title {
   font-weight: 600;
   font-size: 16px;
@@ -156,6 +173,7 @@
   width: 40px;
   height: 40px;
 }
+
 .about-me-uparrow,
 .about-me-downarrow {
   width: 20px;
@@ -173,6 +191,7 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
 }
+
 .about-me-descr-item-about-descr {
   margin-top: 12px;
   margin-bottom: 20px;
@@ -226,6 +245,10 @@
   flex-direction: column;
   gap: 10px;
 }
+@media only screen and (min-width: 1440px) {
+  .about-me-role-list {
+  }
+}
 .about-me-descr-item-about-education {
   margin-top: 12px;
   margin-bottom: 20px;
@@ -244,8 +267,9 @@
 }
 .about-me-descr-item-education-text {
 }
-.about-me-swiper.swiper {
+.about-me-swiper {
   display: flex;
+  /* justify-content: center; */
   align-items: center;
   /* width: 343px; */
   width: 100%;
@@ -256,26 +280,35 @@
   }
 } */
 @media only screen and (min-width: 1440px) {
-  .about-me-swiper.swiper {
+  .about-me-swiper {
     width: 1312px;
   }
 }
-.about-me-swiper-box {
+.about-me-swiper-list {
   display: flex;
   overflow: hidden;
   margin-right: 55px;
 }
 @media only screen and (min-width: 768px) {
-  .about-me-swiper-box {
+  .about-me-swiper-list {
     margin-right: 64px;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .about-me-swiper-box {
+  .about-me-swiper-list {
     margin-right: 72px;
   }
 }
-.about-me-swiper-list-item.swiper-slide {
+/* .test {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center
+} */
+.about-me-swiper-list-item {
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -288,38 +321,37 @@
   flex-shrink: 0;
 }
 @media only screen and (min-width: 768px) {
-  .about-me-swiper-list-item.swiper-slide {
+  .about-me-swiper-list-item {
     width: 200px;
     height: 200px;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .about-me-swiper-list-item.swiper-slide {
+  .about-me-swiper-list-item {
   }
 }
-.about-me-swiper-list-item.swiper-slide:first-child {
+.about-me-swiper-list-item:first-child {
   background-color: #ed3b44;
   border: none;
 }
-.about-me-left-arrow-btn {
+.left-arrow-btn {
   width: 28px;
   height: 28px;
   background-color: #1c1d20;
   border: none;
-  padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  .about-me-left-arrow-btn {
+  .left-arrow-btn {
     width: 40px;
     height: 40px;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .about-me-left-arrow-btn {
+  .left-arrow-btn {
   }
 }
 
-.about-me-swiper-next-arrow {
+.swiper-next-arrow {
   width: 28px;
   height: 28px;
   background-color: #1c1d20;
@@ -327,13 +359,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .about-me-swiper-next-arrow {
+  .swiper-next-arrow {
     width: 40px;
     height: 40px;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .about-me-swiper-next-arrow {
+  .swiper-next-arrow {
   }
 }
 
