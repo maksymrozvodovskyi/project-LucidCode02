@@ -14,11 +14,9 @@
     width: 70px;
     height: 100%;
     background-image: url('../img/work-together/Glass\ effect\ 2.png');
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
     z-index: -1;
-    /* !!! фоновий рівень нижче за контент */
     pointer-events: none;
 }
 
@@ -30,7 +28,7 @@
 
     .work-together-section::after {
         width: 200px;
-        /* планшет — 3 плоски */
+
     }
 }
 
@@ -280,8 +278,8 @@
 
 }
 
-.contact-links a:hover,
-.contact-links a:focus {
+.contact-item:hover,
+.contact-item:focus {
     border-color: #fafafa;
 }
 
