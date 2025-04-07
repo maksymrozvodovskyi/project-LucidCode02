@@ -42,8 +42,8 @@ nextBtnEl.addEventListener('click', () => {
 });
 
 document.addEventListener('keydown', function (evt) {
-  evt.preventDefault();
   if (evt.key === 'Tab') {
+    evt.preventDefault();
     swiper.slideNext();
   }
 });  
