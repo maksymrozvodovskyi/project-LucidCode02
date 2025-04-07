@@ -7,15 +7,13 @@
   color: #fafafa;
   width: 343px;
   align-self: flex-start;
-  margin: 0 auto;
 }
 
 .hero-container {
   width: 100%;
   height: 812px;
   padding: 281px 16px 32px;
-  margin: 0 auto;
-  display: flex;
+
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
@@ -30,9 +28,9 @@
 }
 
 .hero-social-links {
-  align-self: flex-end;
-  position: absolute;
-  right: 16px;
+  display: flex;
+  justify-content: flex-end;
+
   padding-top: 212px;
 }
 
@@ -114,10 +112,9 @@
     gap: 8px;
   }
   .hero-social-links {
-    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
     padding-top: 187px;
-    position: absolute;
-    right: 32px;
   }
   .social-link,
   .email {
@@ -161,8 +158,8 @@
 @media only screen and (min-width: 1440px) {
   .hero-container {
     height: 1024px;
-    padding: 300px 178px 32px;
-    margin: 0 auto;
+    padding-top: 300px;
+
     background-image: url('../img/hero/glasseffect@1x.png'),
       linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
       url('../img/hero/rectangle_desktop@1x.png');
@@ -171,7 +168,8 @@
     background-repeat: repeat-y, no-repeat, no-repeat;
   }
   .hero-social-links {
-    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
     padding-top: 243px;
   }
   .hero-tittle {
