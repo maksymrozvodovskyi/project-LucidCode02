@@ -6,11 +6,9 @@ import { Navigation,Keyboard } from 'swiper/modules';
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper('.swiper-projects',
+  const swiper = new Swiper('.swiper',
     {
-     wrapperClass: 'swiper-wrapper-projects',
-      slideClass: 'swiper-slide-projects', 
-    
+  
     slidesPerView: 1,
       spaceBetween: 20,
     
@@ -30,18 +28,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const nextBtn = document.querySelector('.slider-arrow.next');
   const prevBtn = document.querySelector('.slider-arrow.prev');
 
+function updateButtonStates() {
+   
 
-  nextBtn.classList.add('active');
+    if (swiper.isBeginning) {
+      prevBtn.classList.remove('active');
+    } else {
+      prevBtn.classList.add('active');
+    }
 
-  nextBtn.addEventListener('click', () => {
-    nextBtn.classList.add('active');
-    prevBtn.classList.remove('active');
-  });
-
-  prevBtn.addEventListener('click', () => {
-    prevBtn.classList.add('active');
-    nextBtn.classList.remove('active');
-  });
+    if (swiper.isEnd) {
+      nextBtn.classList.remove('active');
+    } else {
+      nextBtn.classList.add('active');
+    }
+  }
+  swiper.on('slideChange', updateButtonStates);
+  updateButtonStates();
+ 
 });
 
 
