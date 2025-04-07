@@ -6,9 +6,14 @@ import { Navigation,Keyboard } from 'swiper/modules';
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper-projects',
+    {
+     wrapperClass: 'swiper-wrapper-projects',
+      slideClass: 'swiper-slide-projects', 
+    
     slidesPerView: 1,
-    spaceBetween: 20,
+      spaceBetween: 20,
+    
     navigation: {
       nextEl: '.slider-arrow-next',
       prevEl: '.slider-arrow-prev',

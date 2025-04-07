@@ -34,37 +34,38 @@ padding-left: 16px;
 padding-bottom: 32px;
 }
 
-.swiper {
+.swiper-projects {
  margin: auto;
  overflow: hidden;
  height: auto;
 }
 
 @media only screen and (min-width:768px) {
-.swiper{
+.swiper-projects{
 height: 1191px;
     }}
 
 @media only screen and (min-width:1440px) {
-.swiper {
+.swiper-projects {
  height: 625px;
     }}
 
-.swiper-wrapper {
+.swiper-wrapper-projects {
  display: flex;
+
 }
 
-.swiper-slide {
+.swiper-slide-projects {
 width:100%;
 border: none;
 }
 
 @media only screen and (min-width:1440px) {
-.swiper-slide{
+.swiper-slide-projects{
 display: flex !important;
 flex-direction: row;
 align-items:flex-start;
-max-width: 1376px;
+width: 1376px;
     }}
 
 .project-card {
