@@ -55,3 +55,4 @@ document.addEventListener('keydown', function (evt) {
     swiper.slideNext();
   }
 });
+});  
