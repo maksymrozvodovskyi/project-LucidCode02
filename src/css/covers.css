@@ -13,7 +13,7 @@
   position: relative;
   width: 100%;
   /* max-width: 375px; */
-  max-width: 100%;
+  max-width: 375px;
   background-color: #1c1d20;
   background-image: url('../img/covers/elements_vectors.png');
   background-repeat: no-repeat;
@@ -176,56 +176,40 @@
 .cover {
   border: 2px dashed orange;
 } */
-/* Animation */
-/* @keyframes marqueeLine {
-  from {
-    transform: translateX(-20%);
-  }
-
-  to {
-    transform: translateX(-180%);
-  }
-} */
 
 /* Animation */
-
-/* @keyframes slideInLeft {
-  from {
-    transform: translateX(-20%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translateX(20%);
-  }
-  to {
-    transform: translateX(0);
-  }
+.row--even {
+  animation: scroll-left 60s linear infinite;
 }
 
 .row--odd {
-  transform: translateX(0%);
+  animation: scroll-right 60s linear infinite;
 }
 
-.row--even {
-  transform: translateX(0%);
+.covers-list-of-lists {
+  overflow: hidden;
+  position: relative;
 }
 
-.row .animate-left {
-  animation: slideInLeft 1.4s ease-out forwards;
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-.row .animate-right {
-  animation: slideInRight 1.4s ease-out forwards;
-} */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
-/* Анімація */
-
-.row--even.animate {
+/* .row--even.animate {
   animation: move-left 15s linear infinite;
 }
 
@@ -249,4 +233,4 @@
   100% {
     transform: translateX(100%);
   }
-}
+} */
