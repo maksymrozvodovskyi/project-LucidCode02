@@ -77,7 +77,7 @@ const reviewsSwiper = new Swiper('.reviews-section .swiper', {
     // when window width is >= 1440px
     1440: {
       slidesPerView: 4,
-      allowTouchMove: false,
+      allowTouchMove: true,
     },
   },
 });
