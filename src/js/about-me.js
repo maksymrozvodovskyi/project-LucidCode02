@@ -34,16 +34,25 @@ const swiper = new Swiper('.about-me-swiper-box', {
   allowTouchMove: true,
 });
 
-const nextBtnEl = document.querySelector(
-  '.about-me-left-arrow-btn'
-);
+const nextBtnEl = document.querySelector('.about-me-left-arrow-btn');
 nextBtnEl.addEventListener('click', () => {
   swiper.slideNext();
 });
 
+let isInVP = false;
+const observerAboutSection = new IntersectionObserver(
+  ([entry]) => {
+    isInVP = entry.isIntersecting;
+  },
+  { threshold: 0.6 }
+);
+const aboutSwiperElement = document.querySelector('.about-me-swiper-box');
+observerAboutSection.observe(aboutSwiperElement);
 document.addEventListener('keydown', function (evt) {
-  evt.preventDefault();
+  console.log(!isInVP);
+  if (!isInVP) return;
   if (evt.key === 'Tab') {
+    evt.preventDefault();
     swiper.slideNext();
   }
-});  
+});
