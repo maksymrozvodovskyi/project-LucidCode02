@@ -1,20 +1,28 @@
 .benefits-section {
-    padding: 64px 0;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 @media only screen and (min-width: 768px) {
     .benefits-section {
-            padding: 96px 0;
+        padding-top: 96px;
+        padding-bottom: 96px;
         }
 }
 
 @media only screen and (min-width: 1440px) {
     .benefits-section {
+        padding-top: 164px;
+        padding-bottom: 164px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .benefits-content {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
-        padding: 164px 0;
     }
 }
 
@@ -28,6 +36,12 @@
     text-transform: uppercase;
     margin-bottom: 32px;
     white-space: nowrap;
+}
+
+@media only screen and (min-width: 1440px) {
+    .benefits-section-title {
+        margin-bottom: 0;
+        }
 }
 
 .benefits-list {
