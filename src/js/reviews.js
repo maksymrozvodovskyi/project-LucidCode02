@@ -94,11 +94,9 @@ const reviewsSwiperElement = document.querySelector('.reviews-section .swiper');
 observer.observe(reviewsSwiperElement);
 
 let direction;
+
 document.addEventListener('keydown', event => {
   if (!isInViewport) return;
-  
-  const leftButton = document.querySelector('.reviews-buttons-wrapper .swiper-button-prev');
-  const rightButton = document.querySelector('.reviews-buttons-wrapper .swiper-button-next');
 
   const leftButton = document.querySelector('.swiper-button-prev');
   const rightButton = document.querySelector('.swiper-button-next');
@@ -108,6 +106,7 @@ document.addEventListener('keydown', event => {
   } else if (rightButton.classList.contains('swiper-button-disabled')) {
     direction = 'left';
   }
+
   if (event.key === 'Tab' && direction === 'right') {
     event.preventDefault();
     reviewsSwiper.slideNext();
@@ -115,7 +114,4 @@ document.addEventListener('keydown', event => {
     event.preventDefault();
     reviewsSwiper.slidePrev();
   }
-
-});
-
 });
