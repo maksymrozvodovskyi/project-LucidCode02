@@ -177,7 +177,7 @@
   border: 2px dashed orange;
 } */
 /* Animation */
-@keyframes marqueeLine {
+/* @keyframes marqueeLine {
   from {
     transform: translateX(-20%);
   }
@@ -185,7 +185,7 @@
   to {
     transform: translateX(-180%);
   }
-}
+} */
 
 /* Animation */
 
@@ -225,11 +225,11 @@
 
 /* Анімація */
 
-.row--even {
+.row--even .animate {
   animation: move-left 15s linear infinite;
 }
 
-.row--odd {
+.row--odd .animate {
   animation: move-right 15s linear infinite;
 }
 

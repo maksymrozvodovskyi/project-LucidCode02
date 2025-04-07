@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('animate');
+        console.log('DOne');
       } else {
         entry.target.classList.remove('animate');
+        console.log('DDDDone');
       }
     });
   }, observerOptions);
