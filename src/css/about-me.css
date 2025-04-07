@@ -112,10 +112,6 @@
     gap: 32px;
   }
 }
-@media only screen and (min-width: 1440px) {
-  .about-me-descr-list {
-  }
-}
 .about-me-descr-item {
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   min-height: 68px;
@@ -171,6 +167,11 @@
 .about-me-descr-item-about-descr {
   margin-top: 12px;
   margin-bottom: 20px;
+  transition: margin-top 0.4s ease-in-out, margin-bottom 0.4s ease-in-out;
+}
+.about-me-descr-item:not(.is-active) .about-me-descr-item-about-descr {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) {
   .about-me-descr-item-about-descr {
@@ -203,9 +204,15 @@
 .about-me-descr-item-about-role {
   margin-top: 12px;
   margin-bottom: 20px;
+  transition: margin-top 0.4s ease-in-out, margin-bottom 0.4s ease-in-out;
+}
+.about-me-descr-item:not(.is-active) .about-me-descr-item-about-role {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) {
   .about-me-descr-item-about-role {
+    margin-top: 8px;
     margin-bottom: 32px;
   }
 }
@@ -224,6 +231,11 @@
 .about-me-descr-item-about-education {
   margin-top: 12px;
   margin-bottom: 20px;
+  transition: margin-top 0.4s ease-in-out, margin-bottom 0.4s ease-in-out;
+}
+.about-me-descr-item:not(.is-active) .about-me-descr-item-about-education {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) {
   .about-me-descr-item-about-education {
@@ -243,19 +255,11 @@
   flex-direction: column;
   gap: 10px;
 }
-.about-me-descr-item-education-text {
-}
 .about-me-swiper.swiper {
   display: flex;
   align-items: center;
-  /* width: 343px; */
   width: 100%;
 }
-/* @media only screen and (min-width: 768px) {
-  .about-me-swiper {
-    width: 704px;
-  }
-} */
 @media only screen and (min-width: 1440px) {
   .about-me-swiper.swiper {
     width: 1312px;
@@ -287,15 +291,17 @@
   resize: none;
   overflow: auto;
   flex-shrink: 0;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
 }
 @media only screen and (min-width: 768px) {
   .about-me-swiper-list-item.swiper-slide {
     width: 200px;
     height: 200px;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .about-me-swiper-list-item.swiper-slide {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
   }
 }
 .about-me-swiper-list-item.swiper-slide:first-child {
@@ -318,10 +324,6 @@
     height: 40px;
   }
 }
-@media only screen and (min-width: 1440px) {
-  .about-me-left-arrow-btn {
-  }
-}
 .about-me-swiper-next-arrow {
   width: 28px;
   height: 28px;
@@ -333,10 +335,6 @@
   .about-me-swiper-next-arrow {
     width: 40px;
     height: 40px;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .about-me-swiper-next-arrow {
   }
 }
 

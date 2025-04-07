@@ -17,22 +17,21 @@ const swiper = new Swiper('.about-me-swiper-box', {
   },
   keyboard: {
     enabled: true,
+    onlyInViewport: true,
   },
-  loop: true,
   breakpoints: {
     320: {
       slidesPerView: 2,
-      allowTouchMove: true,
     },
     768: {
       slidesPerView: 3,
-      allowTouchMove: true,
     },
     1440: {
       slidesPerView: 6,
-      allowTouchMove: false,
     },
   },
+  loop: true,
+  allowTouchMove: true,
 });
 
 const nextBtnEl = document.querySelector(
@@ -41,3 +40,10 @@ const nextBtnEl = document.querySelector(
 nextBtnEl.addEventListener('click', () => {
   swiper.slideNext();
 });
+
+document.addEventListener('keydown', function (evt) {
+  evt.preventDefault();
+  if (evt.key === 'Tab') {
+    swiper.slideNext();
+  }
+});  
