@@ -49,7 +49,6 @@ const observerAboutSection = new IntersectionObserver(
 const aboutSwiperElement = document.querySelector('.about-me-swiper-box');
 observerAboutSection.observe(aboutSwiperElement);
 document.addEventListener('keydown', function (evt) {
-  console.log(!isInVP);
   if (!isInVP) return;
   if (evt.key === 'Tab') {
     evt.preventDefault();
