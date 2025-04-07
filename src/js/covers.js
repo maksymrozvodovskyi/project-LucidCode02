@@ -1,30 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
   const evenRows = document.querySelectorAll('.row--even');
   const oddRows = document.querySelectorAll('.row--odd');
+  const section = document.querySelector('.section-covers');
 
   const observerOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.1,
+    threshold: 0.25,
   };
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('animate');
-        console.log('DOne');
+        evenRows.forEach(row => row.classList.add('animate'));
+        oddRows.forEach(row => row.classList.add('animate'));
       } else {
-        entry.target.classList.remove('animate');
-        console.log('DDDDone');
+        evenRows.forEach(row => row.classList.remove('animate'));
+        oddRows.forEach(row => row.classList.remove('animate'));
       }
     });
   }, observerOptions);
 
-  evenRows.forEach(row => {
-    observer.observe(row);
-  });
-
-  oddRows.forEach(row => {
-    observer.observe(row);
-  });
+  if (section) {
+    observer.observe(section);
+  }
 });

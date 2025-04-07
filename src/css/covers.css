@@ -225,11 +225,11 @@
 
 /* Анімація */
 
-.row--even .animate {
+.row--even.animate {
   animation: move-left 15s linear infinite;
 }
 
-.row--odd .animate {
+.row--odd.animate {
   animation: move-right 15s linear infinite;
 }
 
