@@ -64,6 +64,7 @@
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-container {
     background-image: url('../img/hero/mobile_2x.png');
+    background-size: cover;
   }
 }
 
@@ -106,6 +107,7 @@
     (min-resolution: 2dppx) {
     .hero-container {
       background-image: url('../img/hero/tablet_2x.png');
+      background-size: cover;
     }
   }
 }
@@ -131,6 +133,7 @@
     (min-resolution: 2dppx) {
     .hero-container {
       background-image: url('../img/hero/desktop_2x.png');
+      background-size: cover;
     }
   }
 }
