@@ -6,21 +6,13 @@
   text-transform: uppercase;
   color: #fafafa;
   align-self: flex-start;
+  max-width: 343px;
 }
 
 .hero-container {
-  width: 100%;
   padding: 281px 0 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  position: relative;
-
   background-image: url('../img/hero/mobile_1x.png');
-  background-size: contain;
   background-repeat: no-repeat;
-  min-width: 375px;
 }
 
 .hero-social-links {
@@ -78,6 +70,8 @@
 @media only screen and (min-width: 768px) {
   .hero-tittle {
     font-size: 90px;
+    max-width: 632px;
+    height: 460px;
   }
 
   .hero-social-links-list {
@@ -104,52 +98,39 @@
   }
 
   .hero-container {
-    height: 1024px;
     padding: 300px 0 32px;
-    align-items: flex-start;
     background-image: url('../img/hero/tablet_1x.png');
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-container {
       background-image: url('../img/hero/tablet_2x.png');
-      background-size: 728px auto, cover, cover;
-      background-position: -147px top, center, center;
-      background-repeat: repeat-y, no-repeat, no-repeat;
     }
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .hero-container {
-    height: 1024px;
     padding-top: 300px;
-
     background-image: url('../img/hero/desktop_1x.png');
-    background-size: auto, cover, cover;
-    background-position: top left, center, center;
-    background-repeat: repeat-y, no-repeat, no-repeat;
   }
+
   .hero-social-links {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 243px;
+    margin-top: 243px;
   }
+
   .hero-tittle {
-    width: 1084px;
     font-size: 90px;
     text-align: left;
+    max-width: 1084px;
+    height: 270px;
   }
+
   @media only screen and (min-width: 1440px) and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-container {
       background-image: url('../img/hero/desktop_2x.png');
-      background-size: 728px auto, cover, cover;
-      background-position: top left, center, center;
-      background-repeat: repeat-y, no-repeat, no-repeat;
     }
   }
 }
