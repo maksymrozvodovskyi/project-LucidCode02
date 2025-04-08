@@ -176,8 +176,11 @@ img {
     padding: 18px 50px;
     width: 177px;
     height: 55px;
-    margin-left: 64px;
-    margin-bottom: 64px;
+  }
+
+  .example {
+    padding-left: 64px;
+    padding-bottom: 64px;
   }
 }
 
