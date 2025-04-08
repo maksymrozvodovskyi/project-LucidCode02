@@ -1,0 +1,720 @@
+[33mcommit 2b7145c5df52f497b06de7af1670b52e2aad426f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfaq[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Tue Apr 8 17:22:34 2025 +0300
+
+    add transition on btn in reviews
+
+[33mcommit d34b153e179a676a1075a38fdad9b25a5f51689a[m
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Tue Apr 8 16:59:00 2025 +0300
+
+    Revert "start"
+
+[33mcommit a8ba1529b994c33b80ad2d9e56b3c61e2e88ad88[m
+Merge: cdb4e2c 436c2d6
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Tue Apr 8 16:57:37 2025 +0300
+
+    Merge pull request #10 from maksymrozvodovskyi/faq
+
+[33mcommit 436c2d679b170f17ca05d9abf474adb950e7f1d7[m[33m ([m[1;31morigin/faq[m[33m)[m
+Author: Roma3577 <mularr37@gmail.com>
+Date:   Tue Apr 8 16:48:09 2025 +0300
+
+    Tuesday
+
+[33mcommit cdb4e2c2b862804ecda5cedc73a469103b407b81[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Tue Apr 8 08:11:48 2025 +0300
+
+    fix container
+
+[33mcommit 9afeb9f0f632733b2e68d9b2a25613abd5cbe917[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Mon Apr 7 23:55:32 2025 +0300
+
+    fix svg
+
+[33mcommit 08ef617fc4f9ff0b541d712a4279d73baa260d28[m
+Merge: d23c784 55816ad
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 23:52:41 2025 +0300
+
+    Merge pull request #12 from maksymrozvodovskyi/benefits
+    
+    Benefits
+
+[33mcommit 55816ad4cdb711e46cb4f4906203cd89be1a8f47[m
+Author: OleksandrNol1k <nevskij.mail@gmail.com>
+Date:   Mon Apr 7 23:47:32 2025 +0300
+
+    change width
+
+[33mcommit d23c78400916681c6b80c080cfb28b6cf6c54f9a[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Mon Apr 7 23:22:42 2025 +0300
+
+    fix js
+
+[33mcommit 934302abbb99afff69d8c68780d2e394cfffa275[m
+Merge: 77a7c02 dbfc48a
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 23:19:22 2025 +0300
+
+    Merge pull request #23 from maksymrozvodovskyi/about-me-section
+    
+    About me section completed
+
+[33mcommit dbfc48a4bd4664253f6dbd3b3268336fca55266e[m
+Merge: 5e070df 77a7c02
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 23:19:10 2025 +0300
+
+    Merge branch 'main' into about-me-section
+
+[33mcommit 69632f744913c1da3e9c3e9a93fb65196f514dcb[m
+Author: Roma3577 <mularr37@gmail.com>
+Date:   Mon Apr 7 23:09:15 2025 +0300
+
+    monday
+
+[33mcommit 5e070dfaebdb9992e3ea5e143659f6789c370e48[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Mon Apr 7 22:54:46 2025 +0300
+
+    About me section completed
+
+[33mcommit f549d1ef458ac2d60f76372fb1d3b4d62c312083[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Mon Apr 7 22:52:30 2025 +0300
+
+    About me section completed
+
+[33mcommit 2f096c8947d045990258c7431dd9d7504e9a0b5c[m
+Merge: b41d30f 29514b2
+Author: OleksandrNol1k <nevskij.mail@gmail.com>
+Date:   Mon Apr 7 22:39:40 2025 +0300
+
+    Merge branch 'benefits' of https://github.com/maksymrozvodovskyi/project-LucidCode02 into benefits
+
+[33mcommit b41d30f15668968978a969548a619583c40d04b6[m
+Author: OleksandrNol1k <nevskij.mail@gmail.com>
+Date:   Mon Apr 7 22:32:03 2025 +0300
+
+    add content div
+
+[33mcommit 77a7c026f4d2774fb2151a81d99e9d79d048094d[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Mon Apr 7 21:51:56 2025 +0300
+
+    fix js
+
+[33mcommit 034dd66f07a23d0fbe56436ce47105040af7a37c[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Mon Apr 7 21:30:05 2025 +0300
+
+    fix js
+
+[33mcommit f51b77c875067154476f527eaee74856f33b3b35[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Mon Apr 7 21:26:14 2025 +0300
+
+    fix js
+
+[33mcommit 5ee54087659836be7fd0ad2a35f5b066b1f6dc4d[m
+Merge: 1852078 82906b7
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 21:17:44 2025 +0300
+
+    Merge pull request #22 from maksymrozvodovskyi/reviews-branch
+    
+    better selectors
+
+[33mcommit 82906b7964e02d461f200dc9f8d2ea287157143c[m
+Merge: 80f5b57 1852078
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 21:17:33 2025 +0300
+
+    Merge branch 'main' into reviews-branch
+
+[33mcommit 80f5b57701624f09160be1e3fe9a4a92bc08041d[m
+Author: Volodymyr_Rostovtsev <fortik1510@gmail.com>
+Date:   Mon Apr 7 19:59:41 2025 +0200
+
+    better selectors
+
+[33mcommit 1852078e2f5ddf9f98b719cb4da6b5edace0b81e[m
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 20:47:34 2025 +0300
+
+    Update about-me.js
+
+[33mcommit 06d2afe093e10c2901646928acbc2f9a3f5af32b[m
+Merge: d6f2725 1867518
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 20:17:26 2025 +0300
+
+    Merge pull request #19 from maksymrozvodovskyi/about-me-section
+    
+    About me section
+
+[33mcommit 18675185d70507bd1c7428fd78dcb5a064da3d29[m
+Merge: 664df57 d6f2725
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 20:16:48 2025 +0300
+
+    Merge branch 'main' into about-me-section
+
+[33mcommit 664df57a5234ba30ed057f915ca303d5f0d356e7[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Mon Apr 7 19:54:07 2025 +0300
+
+    About me section comleted
+
+[33mcommit 07b158d0a1161325cad35c6ada8bb772a88949de[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Mon Apr 7 19:53:14 2025 +0300
+
+    About me section comleted
+
+[33mcommit 15428d16486acf149d0baaa7e832a93e11112934[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Mon Apr 7 19:52:20 2025 +0300
+
+    About me section comleted
+
+[33mcommit 96f4d5a6e873e51ce4e69633b56673b1c1ac0644[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Mon Apr 7 17:01:21 2025 +0300
+
+    About me section completed
+
+[33mcommit d6f27250475c29ac5103a09a6b5da327d0a572d8[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Mon Apr 7 13:28:32 2025 +0300
+
+    fix js reviews
+
+[33mcommit a8ef41cda32a686fe5aafbf98ced91ac530845c1[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Mon Apr 7 13:22:20 2025 +0300
+
+    fix container
+
+[33mcommit 29514b2023f0f8a18fecb0e6eb1f1014fe680407[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Mon Apr 7 02:09:40 2025 +0300
+
+    leaving branch
+
+[33mcommit 43230ef0c1785abc8bdc86e6e36c05991956ee4f[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Mon Apr 7 02:05:08 2025 +0300
+
+    About me section done
+
+[33mcommit 21e5320b4123bfbc5673611e810f590605bb9eba[m
+Author: Roma3577 <mularr37@gmail.com>
+Date:   Mon Apr 7 01:54:54 2025 +0300
+
+    Sunday
+
+[33mcommit fc39e97b4d60c73075946d0f4f9cc00e39d468df[m
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 00:53:16 2025 +0300
+
+    Update about-me.js
+
+[33mcommit a11667d35f52895de896861207ed8090d39c5da4[m
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 00:53:06 2025 +0300
+
+    Update about-me.html
+
+[33mcommit 6febeb12325f03ec772fe5e93f6d2811f0a2f15b[m
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 00:52:51 2025 +0300
+
+    Update about-me.css
+
+[33mcommit 84bdee4bb1978cabe7778c2b71df8a45a5f34df0[m
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 00:49:03 2025 +0300
+
+    Revert "About me with Accordion & Swiper"
+    
+    This reverts commit 4959bbb92f1efeba23cb354fb9ee6c9d5797c4c5.
+
+[33mcommit 6d18b61245f9d958cf821e249686e1fea03b59f0[m
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 00:49:03 2025 +0300
+
+    Revert "About me section done"
+    
+    This reverts commit 9d64c398c641e0a4a81ef406c699d7bb5e9a5cd0.
+
+[33mcommit 5a95bbdfa4b9b967a14c13def6379da17aafa3d3[m
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Mon Apr 7 00:49:03 2025 +0300
+
+    Revert "About me section done"
+    
+    This reverts commit 6f79e165fdecd4025baa519761a7ad8a70e2832e.
+
+[33mcommit 6f79e165fdecd4025baa519761a7ad8a70e2832e[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Sun Apr 6 22:22:25 2025 +0300
+
+    About me section done
+
+[33mcommit 9d64c398c641e0a4a81ef406c699d7bb5e9a5cd0[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Sun Apr 6 21:55:59 2025 +0300
+
+    About me section done
+
+[33mcommit 4959bbb92f1efeba23cb354fb9ee6c9d5797c4c5[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Sun Apr 6 21:33:54 2025 +0300
+
+    About me with Accordion & Swiper
+
+[33mcommit 8f0cfa72e9b8fd5676d3f8bd18df1ed1d5cbc7c8[m
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Sun Apr 6 23:26:39 2025 +0300
+
+    Revert "Covers"
+
+[33mcommit 93d12a7184b6f600d6768de7e1a89873c54261b6[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Sun Apr 6 22:22:25 2025 +0300
+
+    About me section done
+
+[33mcommit ce2ae03870404e23af9141ec6789d66b071d99ea[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Sun Apr 6 21:55:59 2025 +0300
+
+    About me section done
+
+[33mcommit 95bf768474b162a634157856d46a421fe67d810d[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Sun Apr 6 21:33:54 2025 +0300
+
+    About me with Accordion & Swiper
+
+[33mcommit b63a60174ee96f4d919e20da11098a3f2913a4dc[m
+Merge: 7ddab35 4b4e988
+Author: Ihor <u96ok69@gmail.com>
+Date:   Sun Apr 6 21:27:48 2025 +0300
+
+    Merge pull request #7 from maksymrozvodovskyi/covers
+    
+    Covers
+
+[33mcommit 4b4e988dd97af9de5bd988c9c68461728a1950cd[m[33m ([m[1;31morigin/covers[m[33m)[m
+Author: Ihor <u96ok69@gmail.com>
+Date:   Sun Apr 6 21:25:24 2025 +0300
+
+    fix srcset img for 2x resolution
+
+[33mcommit 88f541db046f2a38e6d69333b040568ad9a52057[m
+Author: OleksandrNol1k <nevskij.mail@gmail.com>
+Date:   Sun Apr 6 20:10:30 2025 +0300
+
+    del font-fam
+
+[33mcommit 7ddab35c9482a97e1c7324a7ef73ff78f324cc76[m
+Merge: 92728a9 ee1e16a
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Sun Apr 6 18:06:24 2025 +0300
+
+    About me with Accordion
+
+[33mcommit ee1e16af981d1260605cb95f8e6171a9ecc76656[m
+Merge: f184b44 39e3a8e
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Sun Apr 6 18:03:30 2025 +0300
+
+    About me with Accordion
+
+[33mcommit f184b441a5d1d643690b70cda5e6a43a1876462b[m
+Merge: d164640 92728a9
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Sun Apr 6 18:02:14 2025 +0300
+
+    About me with Accordion
+
+[33mcommit d16464090d672497e4cd75ccaf106001a9242ab2[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Sun Apr 6 17:48:36 2025 +0300
+
+    About me with Accordion
+
+[33mcommit 43030bcb422cfdc40f61fe6cc9278c3ad83d6fba[m
+Author: OleksandrNol1k <nevskij.mail@gmail.com>
+Date:   Sun Apr 6 17:36:23 2025 +0300
+
+    add paddings on section
+
+[33mcommit 778836bf6498947b176cfa0a9c2da1ee8e952548[m
+Author: Roma3577 <mularr37@gmail.com>
+Date:   Sun Apr 6 16:27:51 2025 +0300
+
+    sunday1
+
+[33mcommit 8b55319a8d145b451963a9a45770c77f4589976e[m
+Author: OleksandrNol1k <nevskij.mail@gmail.com>
+Date:   Sun Apr 6 16:05:23 2025 +0300
+
+    delete span in btn
+
+[33mcommit c60fe0e25eee54866e3383b8539030ea98e3a078[m
+Merge: 23772b2 ef09eb1
+Author: Ihor <u96ok69@gmail.com>
+Date:   Sun Apr 6 16:03:48 2025 +0300
+
+    Merge branch 'covers' of https://github.com/maksymrozvodovskyi/project-LucidCode02 into covers
+
+[33mcommit 23772b22c561caa38b481d49b8d61a476d666d70[m
+Author: Ihor <u96ok69@gmail.com>
+Date:   Sun Apr 6 16:00:51 2025 +0300
+
+    make animation, fix width image
+
+[33mcommit 223766bd8913430ef359074a24b25f13daabab10[m
+Author: OleksandrNol1k <nevskij.mail@gmail.com>
+Date:   Sun Apr 6 15:45:52 2025 +0300
+
+    some corrections
+
+[33mcommit 92728a93430e0544f83410d492f266bcea397f1e[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Sun Apr 6 13:37:51 2025 +0300
+
+    fix partials
+
+[33mcommit 3fc2ce684b5e513617471fe2f989ea3cf6245ba9[m
+Author: OleksandrNol1k <nevskij.mail@gmail.com>
+Date:   Sun Apr 6 03:06:54 2025 +0300
+
+    add benefits css
+
+[33mcommit 771fb569dff36d9acda8d55dbf3c2e0d27e891c9[m
+Author: Roma3577 <mularr37@gmail.com>
+Date:   Sun Apr 6 00:39:51 2025 +0300
+
+    start
+
+[33mcommit 39e3a8e45769747d90178abf063bba4e8f2c479a[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Sat Apr 5 22:09:38 2025 +0300
+
+    trying to fix text
+
+[33mcommit 25786d1c29cea06f398766f1b367789fb988b368[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Sat Apr 5 21:09:42 2025 +0300
+
+    fix js
+
+[33mcommit 98674b59d50dcc6337acf6bddf2fafef5eaaa02f[m
+Author: OleksandrNol1k <nevskij.mail@gmail.com>
+Date:   Sat Apr 5 20:53:56 2025 +0300
+
+    benefits markup
+
+[33mcommit ce76a108702a08f3d27689f3d4fa48e3df293409[m
+Author: Ihor <u96ok69@gmail.com>
+Date:   Sat Apr 5 20:53:22 2025 +0300
+
+    fix width section paddings, h2 fnd add 192resolution img
+
+[33mcommit 6b730b8065ce35f254b9f2da95291b36661a7484[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Sat Apr 5 20:23:26 2025 +0300
+
+    add js
+
+[33mcommit 170c95a4db394cb9946f1466f17a679562478b71[m
+Merge: b4d2532 f5ab1fe
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Sat Apr 5 20:22:13 2025 +0300
+
+    Merge pull request #8 from maksymrozvodovskyi/reviews-branch
+    
+    End Reviews
+
+[33mcommit f5ab1fe204f793cb9c27d2fcc5b4e31ba48a37b0[m
+Merge: 83e3191 b4d2532
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Sat Apr 5 20:21:57 2025 +0300
+
+    Merge branch 'main' into reviews-branch
+
+[33mcommit 83e319109b2c696c9fd726f06bcb0338b28a3ab2[m[33m ([m[1;32mreviews-branch[m[33m)[m
+Merge: 479c16b 816c765
+Author: Volodymyr_Rostovtsev <fortik1510@gmail.com>
+Date:   Sat Apr 5 18:35:42 2025 +0200
+
+    added keayboard contoll
+
+[33mcommit 479c16b6bb509a1b0896f665c45bea22c4fa83bb[m
+Author: Volodymyr_Rostovtsev <fortik1510@gmail.com>
+Date:   Sat Apr 5 18:27:44 2025 +0200
+
+    added keyboard controll
+
+[33mcommit b4d2532c6bfaa51b0a4e253b863a020aeb16fc57[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Sat Apr 5 19:21:08 2025 +0300
+
+    add to body background
+
+[33mcommit ef09eb13a634ad5e345b74c959d36e826aba881a[m[33m ([m[1;32mcovers[m[33m)[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Sat Apr 5 19:20:21 2025 +0300
+
+    fix
+
+[33mcommit f4f370abc90b11ecd7f59ba363a5fbec16a69710[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Sat Apr 5 19:19:39 2025 +0300
+
+    fix
+
+[33mcommit 8ff88ac0258d998bae20857a08579cf09031b031[m
+Author: Ihor <u96ok69@gmail.com>
+Date:   Sat Apr 5 17:56:33 2025 +0300
+
+    make animation
+
+[33mcommit 0a47e9c5c0e892cfc91c34a3e3a5c7b133e7ed7d[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Sat Apr 5 17:08:30 2025 +0300
+
+    fix code js
+
+[33mcommit b6fb90e465760072a85f30afe3cef29321fed52d[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Sat Apr 5 17:02:15 2025 +0300
+
+    fix code
+
+[33mcommit 3e2ec174ba151517b5b8ed5478cd91e9918e183a[m
+Merge: 26d42dd 816c765
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Sat Apr 5 17:02:24 2025 +0300
+
+    Merge pull request #6 from maksymrozvodovskyi/reviews-branch
+    
+    fix section reviews
+
+[33mcommit 816c7654a0c61b3c7bdd51c94f006c553d34003e[m
+Merge: 0425cb6 26d42dd
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Sat Apr 5 17:02:10 2025 +0300
+
+    Merge branch 'main' into reviews-branch
+
+[33mcommit 0425cb6827b1f63877fff92457ec3b947ebca2e6[m
+Author: Volodymyr_Rostovtsev <fortik1510@gmail.com>
+Date:   Sat Apr 5 16:00:04 2025 +0200
+
+    async function
+
+[33mcommit 26d42dd577ab07cac8604751d39ffbb9c9c9cfdf[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Sat Apr 5 16:49:42 2025 +0300
+
+    debug code
+
+[33mcommit db91cc4f7962b761a5d8ac5dc763ea014cbc3b39[m
+Merge: 50fcb1e 6043b12
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Sat Apr 5 16:35:06 2025 +0300
+
+    Merge pull request #4 from maksymrozvodovskyi/reviews-branch
+    
+    Add section reviews
+
+[33mcommit 6043b12f0e139a60b91dd4e155b42e6e82423f80[m
+Merge: b88f115 50fcb1e
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Sat Apr 5 16:34:46 2025 +0300
+
+    Merge branch 'main' into reviews-branch
+
+[33mcommit b88f1157fd8be0c2c0d9ff9cf230669354c330f8[m
+Author: Volodymyr_Rostovtsev <fortik1510@gmail.com>
+Date:   Sat Apr 5 13:54:45 2025 +0200
+
+    fixed http path
+
+[33mcommit 79de272f9fea32437a59b8c7ed3adb495ca7e53b[m
+Author: Volodymyr_Rostovtsev <fortik1510@gmail.com>
+Date:   Sat Apr 5 13:53:33 2025 +0200
+
+    added Not found text and iziToast
+
+[33mcommit 50fcb1e343c9cb655ba1c407c507ed9d5eb9e76b[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Sat Apr 5 13:20:45 2025 +0300
+
+    add some files
+
+[33mcommit 2fbc4cf9d5566f0de911a8d56d5e9dc4c00f07c1[m
+Author: Ihor <u96ok69@gmail.com>
+Date:   Fri Apr 4 19:59:39 2025 +0300
+
+    fix css and js
+
+[33mcommit b30fd8267d04ee74ded3057731eda84ea4214a6b[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Fri Apr 4 18:51:55 2025 +0300
+
+    add axios and izitoast
+
+[33mcommit 74f7ef71ecd5441968a9707abed26d2afbd0d180[m[33m ([m[1;31morigin/about-me-section[m[33m, [m[1;32mabout-me-section[m[33m)[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Fri Apr 4 18:47:53 2025 +0300
+
+    fix checkout main because of change in css
+
+[33mcommit 21c04e45386ff0e58df378877a97b6958362c879[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Fri Apr 4 17:36:35 2025 +0300
+
+    About me markup & css
+
+[33mcommit 0af2b0f41431b0b9c57ad74ede57fcfdb882974d[m
+Author: Volodymyr_Rostovtsev <fortik1510@gmail.com>
+Date:   Fri Apr 4 15:53:47 2025 +0200
+
+    reviews HTML,CSS,JavaScript
+
+[33mcommit af53f0c2360593b7509c5cf11bcbe31996439ea5[m
+Author: Sergeyt2000 <sergeyt2000@gmail.com>
+Date:   Fri Apr 4 13:48:14 2025 +0300
+
+    About me section markup
+
+[33mcommit 7ffb35529fe2b4b29fd4118ffc22c3b066e8f36f[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Fri Apr 4 13:00:47 2025 +0300
+
+    add js files and import to main.js
+
+[33mcommit e201f4bd390ba4dda8e688999260d12450ebe5b5[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Fri Apr 4 00:11:11 2025 +0300
+
+    add pull reauests list
+
+[33mcommit fccbeaea99d3669cf0f6b130f0a826749cc4fbed[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 23:05:44 2025 +0300
+
+    add favicon
+
+[33mcommit 6b25a6dca40d1f09229dcad97988620ebcb72009[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 22:41:33 2025 +0300
+
+    fix svg
+
+[33mcommit 10e7093cd2ce1f6c7dcdd7a3671cc5082a9f0c54[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 22:22:45 2025 +0300
+
+    fix svg
+
+[33mcommit 9345418edfdd3133dd78394bc83ef8b77c7ea92f[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 22:16:17 2025 +0300
+
+    fix work together
+
+[33mcommit 376a4e010d0d44993cffb8a4b73ed59d4e1e426d[m
+Author: Ihor <u96ok69@gmail.com>
+Date:   Thu Apr 3 21:07:01 2025 +0300
+
+    make html and some css
+
+[33mcommit 0b13191b59cfd238c76c58bd8ad9ecc1045a43dc[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 18:30:19 2025 +0300
+
+    add fonts
+
+[33mcommit 5f35999d5eb34bf1b6252b9d39bb2e86483cf46b[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 13:31:59 2025 +0300
+
+    add folder js
+
+[33mcommit c30c571d41d902c0f9a08c003e58f575d255e1e4[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 13:30:02 2025 +0300
+
+    add sprite
+
+[33mcommit 7d75ae748ef00b67ec324b46d109930abf7ea46f[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 12:39:11 2025 +0300
+
+    fix container
+
+[33mcommit d655a09f980c134e775d38c07b1246d463622b22[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 01:04:34 2025 +0300
+
+    add img example
+
+[33mcommit 01f29f51e5a3f239fdea851b83b661d00dfb8e76[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 01:01:41 2025 +0300
+
+    add librs and packages
+
+[33mcommit 268d9e7a5dd0f539803269932761e7138ed9acbf[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 00:56:57 2025 +0300
+
+    add fonts and normilze
+
+[33mcommit b12445eff23fd3a71ca068c815eb7fffaf97e7a3[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 00:48:14 2025 +0300
+
+    add load at inhex.html
+
+[33mcommit 06e1ba8baf5c40071ae899b0aefaeb269b92631c[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 00:43:59 2025 +0300
+
+    add css
+
+[33mcommit 31c46e9f600b56c2ca6e5576a140381e60bdd534[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 00:37:54 2025 +0300
+
+    add html partials
+
+[33mcommit 9fc973426d467b393df4e47866097f1eb8f8281b[m
+Author: maksym rozvodovskyi <maksym.rozvodovskyi@ukr.net>
+Date:   Thu Apr 3 00:01:25 2025 +0300
+
+    add img folders
+
+[33mcommit f6c66cd22d1ac5fbc134e18ebf141996bc999d05[m
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Wed Apr 2 23:57:52 2025 +0300
+
+    Update package.json
+
+[33mcommit a04564f086f03c21024707adf0c7d8e997d7fabb[m
+Author: maksymrozvodovskyi <152100542+maksymrozvodovskyi@users.noreply.github.com>
+Date:   Wed Apr 2 23:55:15 2025 +0300
+
+    Initial commit
