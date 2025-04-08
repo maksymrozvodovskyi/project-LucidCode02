@@ -12,7 +12,6 @@
 .section-covers {
   position: relative;
   width: 100%;
-  /* max-width: 375px; */
   max-width: 375px;
   background-color: #1c1d20;
   background-image: url('../img/covers/elements_vectors.png');
@@ -24,6 +23,7 @@
   height: 508px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 64px 0;
   margin: 0 auto;
 }
@@ -31,6 +31,12 @@
 @media (min-resolution: 192dpi) {
   .section-covers {
     background-image: url('../img/covers/elements_vectors@2x.png');
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section-covers .container {
+    min-width: 320px;
   }
 }
 
@@ -54,7 +60,6 @@
   position: relative;
   padding: 40px 20px;
   margin: 0 auto;
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +91,7 @@
   align-items: center;
   height: 163px;
   width: 100%;
-  min-width: unset;
+  /* min-width: unset; */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
