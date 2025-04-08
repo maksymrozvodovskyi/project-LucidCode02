@@ -255,25 +255,26 @@
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: space-between;
 }
 @media only screen and (min-width: 1440px) {
   .about-me-swiper.swiper {
-    width: 1312px;
+    width: 1312px;    
   }
 }
 .about-me-swiper-box {
   display: flex;
   overflow: hidden;
-  margin-right: 55px;
+  width: 260px;
 }
 @media only screen and (min-width: 768px) {
   .about-me-swiper-box {
-    margin-right: 64px;
+    width: 600px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .about-me-swiper-box {
-    margin-right: 72px;
+    width: 1200px;
   }
 }
 .about-me-swiper-list-item.swiper-slide {
