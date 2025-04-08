@@ -1,6 +1,4 @@
 .about-me {
-  background-color: #1c1d20;
-  color: #fafafa;
   padding-top: 64px;
   padding-bottom: 64px;
 }
@@ -259,7 +257,7 @@
 }
 @media only screen and (min-width: 1440px) {
   .about-me-swiper.swiper {
-    width: 1312px;    
+    width: 1312px;
   }
 }
 .about-me-swiper-box {
