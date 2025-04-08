@@ -1,49 +1,55 @@
 .work-together-section {
-    position: relative;
     padding: 32px 0;
     background-color: #1c1d20;
-    overflow: hidden;
-    z-index: 0;
-}
-
-.work-together-section::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 70px;
-    height: 100%;
-    background-image: url('../img/work-together/Glass\ effect\ 2.png');
+    background-image: image-set(url(../img/work-together/Portfolio/elements_mob@1x.png) 1x,
+                url(../img/work-together/Portfolio/elements_mob@2x.png) 2x);
     background-repeat: no-repeat;
-    background-position: right center;
-    z-index: -1;
-    pointer-events: none;
+    background-position: right;
+    background-size: auto 100%;
+        
 }
+.work-together-background {
+    position:fixed;
+    top: 0;
+    left: 295px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+       
 
 
 @media screen and (min-width: 768px) {
     .work-together-section {
         padding: 88px 0 169px 0;
-    }
-
-    .work-together-section::after {
-        width: 200px;
-
-    }
+        background-image: image-set(url(../img/work-together/Portfolio/elements_tab@1x.png) 1x,
+                    url(../img/work-together/Portfolio/elements_tab@2x.png) 2x);
+        background-repeat: no-repeat;
+        background-position: right -10px bottom 0px;
+        background-size: auto 100%;
+    }      
 }
 
 @media screen and (min-width: 1440px) {
     .work-together-section {
         padding: 80px 0 169px 0;
-        background-size: contain;
+        background-image: image-set(url(../img/work-together/Portfolio/elements_desc@1x.png) 1x,
+                url(../img/work-together/Portfolio/elements_desc@2x.png) 2x);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: auto 100%;
+        background-position: right -20px bottom 0px;
     }
-
-    .work-together-section::after {
-        width: 414px;
-    }
-
+    
     .work-together-section .container {
         padding: 0 196px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .work-together-section {
+        background-size: auto 100%;
+        background-position: right 500px bottom 0px;
     }
 }
 
