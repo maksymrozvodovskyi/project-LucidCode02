@@ -5,38 +5,32 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
-  width: 343px;
   align-self: flex-start;
 }
 
 .hero-container {
   width: 100%;
-  height: 812px;
-  padding: 281px 16px 32px;
+  padding: 281px 0 32px;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
 
-  background-image: url('../img/hero/glasseffect@1x.png'),
-    linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
-    url('../img/hero/rectangle_mob@1x.png');
-  background-size: 578px auto, cover, cover;
-  background-position: -268px top, center, center;
-  background-repeat: repeat-y, no-repeat, no-repeat;
+  background-image: url('../img/hero/mobile_1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 375px;
 }
 
 .hero-social-links {
   display: flex;
   justify-content: flex-end;
-  padding-top: 212px;
+  margin-top: 212px;
 }
 
 .hero-social-links-list {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
   gap: 4px;
 }
 
@@ -46,36 +40,21 @@
   font-size: 14px;
   letter-spacing: -0.02em;
   color: #fafafa;
-  display: block;
   width: 100%;
-  height: 100%;
-  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .hero-social-item,
 .hero-email-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 10px 8px;
   width: 37px;
-  height: 37px;
-  position: relative;
 }
 
 .hero-email-item {
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  padding: 10px 12px;
   width: 178px;
   height: 37px;
 }
@@ -92,60 +71,51 @@
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-container {
-    background-image: url('../img/hero/glasseffect@2x.png'),
-      linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
-      url('../img/hero/rectangle_mob@2x.png');
-    background-size: 578px auto, cover, cover;
-    background-position: -268px top, center, center;
-    background-repeat: repeat-y, no-repeat, no-repeat;
+    background-image: url('../img/hero/mobile_2x.png');
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero-tittle {
     font-size: 90px;
-    width: 632px;
   }
+
   .hero-social-links-list {
     gap: 8px;
   }
+
   .hero-social-links {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 187px;
+    margin-top: 187px;
   }
+
   .social-link,
   .email {
     font-size: 16px;
   }
+
   .hero-social-item,
   .hero-email-item {
-    padding: 18px 16px;
     width: 55px;
-    height: 55px;
   }
+
   .hero-email-item {
-    padding: 18px 24px;
     width: 223px;
     height: 55px;
   }
+
   .hero-container {
     height: 1024px;
-    padding: 300px 32px 32px;
+    padding: 300px 0 32px;
     align-items: flex-start;
-    background-image: url('../img/hero/glasseffect@1x.png'),
-      linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
-      url('../img/hero/rectangle_tablet@1x.png');
-    background-size: 728px auto, cover, cover;
-    background-position: -147px top, center, center;
-    background-repeat: repeat-y, no-repeat, no-repeat;
+    background-image: url('../img/hero/tablet_1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
+
   @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-container {
-      background-image: url('../img/hero/glasseffect@2x.png'),
-        linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
-        url('../img/hero/rectangle_tablet@2x.png');
+      background-image: url('../img/hero/tablet_2x.png');
       background-size: 728px auto, cover, cover;
       background-position: -147px top, center, center;
       background-repeat: repeat-y, no-repeat, no-repeat;
@@ -158,9 +128,7 @@
     height: 1024px;
     padding-top: 300px;
 
-    background-image: url('../img/hero/glasseffect@1x.png'),
-      linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
-      url('../img/hero/rectangle_desktop@1x.png');
+    background-image: url('../img/hero/desktop_1x.png');
     background-size: auto, cover, cover;
     background-position: top left, center, center;
     background-repeat: repeat-y, no-repeat, no-repeat;
@@ -178,9 +146,7 @@
   @media only screen and (min-width: 1440px) and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-container {
-      background-image: url('../img/hero/glasseffect@2x.png'),
-        linear-gradient(to left, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%),
-        url('../img/hero/rectangle_desktop@2x.png');
+      background-image: url('../img/hero/desktop_2x.png');
       background-size: 728px auto, cover, cover;
       background-position: top left, center, center;
       background-repeat: repeat-y, no-repeat, no-repeat;
