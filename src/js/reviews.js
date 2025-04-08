@@ -77,7 +77,7 @@ const reviewsSwiper = new Swiper('.reviews-section .swiper', {
     // when window width is >= 1440px
     1440: {
       slidesPerView: 4,
-      allowTouchMove: false,
+      allowTouchMove: true,
     },
   },
 });
@@ -96,8 +96,12 @@ observer.observe(reviewsSwiperElement);
 let direction;
 document.addEventListener('keydown', event => {
   if (!isInViewport) return;
-  const leftButton = document.querySelector('.swiper-button-prev');
-  const rightButton = document.querySelector('.swiper-button-next');
+  const leftButton = document.querySelector(
+    '.reviews-buttons-wrapper .swiper-button-prev'
+  );
+  const rightButton = document.querySelector(
+    '.reviews-buttons-wrapper .swiper-button-next'
+  );
   if (leftButton.classList.contains('swiper-button-disabled')) {
     direction = 'right';
   } else if (rightButton.classList.contains('swiper-button-disabled')) {
