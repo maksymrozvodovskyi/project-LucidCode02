@@ -36,7 +36,7 @@
 
 @media screen and (max-width: 375px) {
   .section-covers .container {
-    min-width: 320px;
+    width: 320px;
   }
 }
 
