@@ -1,286 +1,239 @@
 body {
-    background-color: #1c1d20;
-    color: white;
-    text-align: center;
-}
-
-.projects {
-    width: 100%;
-    height: 952px;
-}
-
-@media only screen and (min-width:768px) {
-    .projects {
-        width: 100%;
-        height: 1379px;
-    }
-}
-
-@media only screen and (min-width:1440px) {
-    .projects {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
+  background-color: #1c1d20;
+  color: white;
+  text-align: center;
 }
 
 .projects-title {
-    font-weight: 600;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: rgba(250, 250, 250, 0.4);
-    text-align: left;
-    margin-left: 16px;
-    margin-bottom: 32px;
-}
-
-.swiper-projects {
-    overflow: hidden;
-    height: auto;
-}
-
-@media only screen and (min-width:768px) {
-    .swiper-projects {
-        height: 1191px;
-    }
-}
-
-@media only screen and (min-width:1440px) {
-    .swiper-projects {
-        height: 625px;
-    }
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  text-align: left;
+  margin-bottom: 32px;
 }
 
 .swiper-wrapper-projects {
-    display: flex;
-
+  display: flex;
 }
 
 .swiper-slide-projects {
-    width: 100%;
-    border: none;
-    height: 625px;
+  width: 100%;
 }
 
-@media only screen and (min-width:1440px) {
-    .swiper-slide-projects {
-        display: flex !important;
-        flex-direction: row;
-        align-items: flex-start;
-    }
+@media only screen and (min-width: 1440px) {
+  .swiper-slide-projects {
+    display: flex !important;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .project-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #fafafa;
-    border-radius: 24px 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fafafa;
+  border-radius: 24px 24px 0 0;
 }
 
-@media only screen and (min-width:1440px) {
-    .project-card {
-        border-radius: 24px 0 0 24px;
-        height: 625px;
-    }
+@media only screen and (min-width: 1440px) {
+  .project-card {
+    border-radius: 24px 0 0 24px;
+    height: 625px;
+  }
 }
 
 .project-card,
 .card-black {
-    flex: 1 1 50%;
+  flex: 1 1 50%;
 }
 
-
 .list-tags {
-    padding: 32px 32px 0 32px;
+  padding: 32px 32px 0 32px;
 }
 
 .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #1c1d20;
+}
+
+@media only screen and (min-width: 768px) {
+  .tags {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 6px;
-    width: 279px;
-    height: 96px;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    color: #1c1d20;
-    justify-content: flex-start;
+    width: 312px;
+    height: 55px;
+  }
 }
-
-@media only screen and (min-width:768px) {
-    .tags {
-        display: flex;
-        flex-direction: row;
-        width: 312px;
-        height: 55px;
-    }
-}
-
 
 .tag-react {
-    border: 1px solid rgba(28, 29, 32, 0.2);
-    border-radius: 60px;
-    padding: 13px 18px;
-    width: 80px;
-    height: 45px;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+  border-radius: 60px;
+  padding: 13px 18px;
+  width: 80px;
+  height: 45px;
 }
 
 .tag-js {
-    border: 1px solid rgba(28, 29, 32, 0.2);
-    border-radius: 60px;
-    padding: 13px 18px;
-    width: 57px;
-    height: 45px;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+  border-radius: 60px;
+  padding: 13px 18px;
+  width: 57px;
+  height: 45px;
 }
 
 .tag-node {
-    border: 1px solid rgba(28, 29, 32, 0.2);
-    border-radius: 60px;
-    padding: 13px 18px;
-    width: 94px;
-    height: 45px;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+  border-radius: 60px;
+  padding: 13px 18px;
+  width: 94px;
+  height: 45px;
 }
 
 .tag-git {
-    border: 1px solid rgba(28, 29, 32, 0.2);
-    border-radius: 60px;
-    padding: 13px 18px;
-    width: 63px;
-    height: 45px;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+  border-radius: 60px;
+  padding: 13px 18px;
+  width: 63px;
+  height: 45px;
 }
 
 .card-black {
-    display: flex;
-    border-radius: 0 0 24px 24px;
-    width: 100%;
-    height: 395px;
-    background: #242527;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  border-radius: 0 0 24px 24px;
+  height: 395px;
+  background: #242527;
+  justify-content: center;
+  align-items: center;
 }
 
-@media only screen and (min-width:768px) {
-    .card-black {
-        height: 625px;
-    }
+@media only screen and (min-width: 768px) {
+  .card-black {
+    height: 625px;
+  }
 }
 
-@media only screen and (min-width:1440px) {
-    .card-black {
-        border-radius: 0 24px 24px 0;
-    }
+@media only screen and (min-width: 1440px) {
+  .card-black {
+    border-radius: 0 24px 24px 0;
+  }
 }
 
 img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .name-project {
-    font-size: 24px;
-    color: #1c1d20;
-    padding: 96px 32px 32px 32px;
-    text-align: left;
+  font-size: 24px;
+  color: #1c1d20;
+  padding: 96px 32px 32px 32px;
+  text-align: left;
 }
 
-@media only screen and (min-width:768px) {
-    .name-project {
-        font-size: 44px;
-        line-height: 1;
-        padding: 164px 146px 32px 64px;
-    }
+@media only screen and (min-width: 768px) {
+  .name-project {
+    font-size: 44px;
+    line-height: 1;
+    padding: 164px 146px 32px 64px;
+  }
 }
 
-@media only screen and (min-width:1440px) {
-    .name-project {
-        padding: 223px 130px 32px 64px;
-    }
+@media only screen and (min-width: 1440px) {
+  .name-project {
+    padding: 223px 130px 32px 64px;
+  }
+}
+
+.example {
+  padding-left: 32px;
+  padding-bottom: 32px;
 }
 
 .btn {
-    border-radius: 60px;
-    padding: 13px 32px;
-    width: 141px;
-    height: 45px;
-    background-color: #ed3b44;
-    color: #fafafa;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    border: none;
-    margin-left: 32px;
-    margin-bottom: 32px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
+  border-radius: 60px;
+  padding: 13px 32px;
+  width: 141px;
+  height: 45px;
+  background-color: #ed3b44;
+  color: #fafafa;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-@media only screen and (min-width:768px) {
-    .btn {
-        display: inline-block;
-        padding: 18px 50px;
-        width: 177px;
-        height: 55px;
-        margin-left: 64px;
-        margin-bottom: 64px;
-    }
+@media only screen and (min-width: 768px) {
+  .btn {
+    display: inline-block;
+    padding: 18px 50px;
+    width: 177px;
+    height: 55px;
+    margin-left: 64px;
+    margin-bottom: 64px;
+  }
 }
 
 .btn:hover {
-    background-color: #E0373F;
+  background-color: #e0373f;
 }
 
 .project-buttons-wrapper {
-    display: flex;
-    margin-top: 32px;
-    gap: 12px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  margin-top: 32px;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider-buttons {
-    border: 1px solid rgba(250, 250, 250, 0.5);
-    border-radius: 60px;
-    padding: 14px;
-    width: 52px;
-    height: 52px;
-    cursor: pointer;
-    background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+  background-color: transparent;
 }
-
 
 .slider-buttons:hover,
 .slider-buttons:focus {
-    border-color: rgba(250, 250, 250);
+  border-color: rgba(250, 250, 250);
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
-    stroke: rgba(250, 250, 250, 0.5);
-    fill: transparent;
-    transition: stroke 0.3s ease;
+  width: 24px;
+  height: 24px;
+  stroke: rgba(250, 250, 250, 0.5);
+  fill: transparent;
+  transition: stroke 0.3s ease;
 }
 
 .slider-buttons.swiper-button-disabled {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    cursor: auto;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  cursor: auto;
 }
 
 .slider-buttons.swiper-button-disabled .icon {
-    stroke: #3b3b3b;
+  stroke: #3b3b3b;
 }
 
-@media only screen and (min-width:768px) {
-    .icon {
-        width: 32px;
-        height: 32px;
-    }
+@media only screen and (min-width: 768px) {
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
 
-    .slider-buttons {
-        padding: 18px;
-        width: 68px;
-        height: 68px;
-    }
+  .slider-buttons {
+    padding: 18px;
+    width: 68px;
+    height: 68px;
+  }
 }
