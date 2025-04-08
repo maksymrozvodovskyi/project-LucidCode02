@@ -1,4 +1,4 @@
-h2 {
+ h2 {
     font-family: "Inter Tight", sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -16,7 +16,8 @@ h2 {
     padding-bottom: 64px;
 }
 
-.my-ac-co {
+
+.accordion-container {
     width: 100%;
     margin: 0 !important;
     padding: 0 !important;
@@ -25,20 +26,36 @@ h2 {
     flex-direction: column;
 }
 
-.my-ac .my-ac-trigger {
+my-ac-co{
+    display: flex;
+        flex-direction: column;
+}
+
+.ac .ac-trigger {
     padding: 0 !important;
 }
 
-.my-ac:not(:first-child) {
+.ac:not(:first-child) {
     border-top: none;
 }
 
-.my-ac-header {
+.ac-my-h {
     background-color: #1C1D20;
     margin-bottom: 0;
 }
 
-.my-ac-trigger {
+.text-extra{
+    font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        color: rgba(250, 250, 250, 0.6);
+        background-color: #1C1D20;
+        padding-bottom: 20px;
+}
+
+.ac-my-tr {
     background-color: transparent;
     width: 100%;
     padding: 0;
@@ -70,13 +87,13 @@ h2 {
     padding-top: 20px;
 }
 
-.my-ac-panel {
+.my-ac-p {
     background-color: #1C1D20;
     padding: 0;
     border: none !important;
 }
 
-.my-ac-panel p {
+.my-ac-p p {
     padding-bottom: 20px;
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
@@ -86,8 +103,8 @@ h2 {
     color: rgba(250, 250, 250, 0.6);
 }
 
-.my-ac-plus,
-.my-ac-minus {
+.ac-plus,
+.ac-minus {
     width: 34px;
     height: 34px;
     font-size: 24px;
@@ -102,37 +119,37 @@ h2 {
     flex-shrink: 0;
 }
 
-.my-ac-minus {
+.ac-minus {
+    display: inline-block;
+}
+
+.my-ac.is-open .ac-plus {
     display: none;
 }
 
-.my-ac.is-open .my-ac-plus {
-    display: none;
-}
-
-.my-ac.is-open .my-ac-minus {
+.my-ac.is-open .ac-minus {
     display: inline-flex;
 }
 
-.my-ac,
-.my-ac-header,
-.my-ac-trigger,
-.my-ac-panel,
-.my-ac-co {
+.ac,
+.ac-header,
+.ac-trigger,
+.ac-panel,
+.accordion-container {
     border-left: none !important;
     border-right: none !important;
     box-shadow: none !important;
     outline: none !important;
 }
 
-.my-ac-trigger::before,
-.my-ac-trigger::after,
-.my-ac-panel::before,
-.my-ac-panel::after {
+.ac-trigger::before,
+.ac-trigger::after,
+.ac-panel::before,
+.ac-panel::after {
     display: none !important;
 }
 
-.my-ac.js-enabled {
+.ac.js-enabled {
     margin: 0 !important;
 }
 
@@ -154,6 +171,7 @@ h2 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+
 @media only screen and (min-width: 768px) {
 
     .faq {
@@ -165,7 +183,7 @@ h2 {
         width: 704px;
     }
 
-    .my-ac-panel p {
+        .my-ac-p p {
         padding-bottom: 24px;
     }
 
@@ -174,7 +192,7 @@ h2 {
         padding-bottom: 42px !important;
     }
 
-    .my-ac.is-open .text-main {
+        .my-ac.is-open .text-main {
         padding-bottom: 26px !important;
     }
 
@@ -183,8 +201,8 @@ h2 {
         height: 0;
     }
 
-    .my-ac-plus,
-    .my-ac-minus {
+    .ac-plus,
+    .ac-minus {
         width: 40px;
         height: 40px;
     }
@@ -193,6 +211,7 @@ h2 {
         padding-top: 32px;
     }
 }
+
 
 @media only screen and (min-width: 1440px) {
 
@@ -204,13 +223,15 @@ h2 {
     .just {
         display: flex;
         width: 1376px;
+
     }
 
-    .my-ac-co {
+        .my-ac-co {
         width: 50%;
+
     }
 
-    .my-ac {
+        .my-ac {
         width: 100%;
         margin-bottom: 0 !important;
         box-sizing: border-box;
@@ -218,11 +239,11 @@ h2 {
         border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
     }
 
-    .my-ac-panel p {
+        .my-ac-p p {
         padding-bottom: 26px;
     }
 
-    .my-ac-co:first-of-type .my-ac:nth-child(3) .my-ac-panel p {
+        .my-ac-co:first-of-type  .my-ac:nth-child(3) .my-ac-p p {
         padding-bottom: 56px;
     }
 
@@ -230,7 +251,7 @@ h2 {
         padding-top: 32px !important;
     }
 
-    .my-ac-co .my-ac:not(.is-open) .text-main {
+         .my-ac-co .my-ac:not(.is-open) .text-main {
         padding-bottom: 42px !important;
     }
 
@@ -241,6 +262,7 @@ h2 {
     .my-ac-co:nth-of-type(2) .my-ac:nth-child(3):not(.is-open) .text-main {
         padding-bottom: 32px !important;
     }
+
 
     .my-ac-co .my-ac.is-open .text-main {
         padding-bottom: 26px !important;
@@ -270,13 +292,13 @@ h2 {
         height: 0;
     }
 
-    .my-ac-panel {
+        .my-ac-p {
         transition: max-height 0.3s ease;
         max-height: 0;
         overflow: hidden;
     }
 
-    .my-ac.is-open .my-ac-panel {
+    .my-ac.is-open .my-ac-p {
         max-height: 500px;
     }
 }
