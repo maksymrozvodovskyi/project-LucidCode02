@@ -1,14 +1,13 @@
 import Swiper from 'swiper';
 import 'swiper/css';
-import 'swiper/css/navigation';
 import { Navigation,Keyboard } from 'swiper/modules';
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper('.swiper',
+const swiper = new Swiper('.swiper-box .swiper',
     {
-   
+      modules: [Navigation, Keyboard],
+      direction: 'horizontal',
       slidesPerView: 1,
       spaceBetween: 20,
 
@@ -18,35 +17,27 @@ document.addEventListener("DOMContentLoaded", function () {
       },
 
       keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-      },
+        enabled: true
+      }
 
-      modules: [Navigation, Keyboard],
 
-       on: {
-      init: updateArrowStates,
-      slideChange: updateArrowStates,
-    },
     });
 
-  const nextBtn = document.querySelector('.slider-arrow-next');
-  const prevBtn = document.querySelector('.slider-arrow-prev');
-  
-  function updateArrowStates() {
+    let isInVPr = false;
+    const observerProjectsSection = new IntersectionObserver(
+    ([entry]) => {
+        isInVPr = entry.isIntersecting;
+    },
+    { threshold: 0.5 }
+    );
 
-    if (swiper.isBeginning) {
-      prevBtn.classList.remove('swiper-button-disabled');
-      nextBtn.classList.add('swiper-button-disabled');
-    } else if (swiper.isEnd) {
-      nextBtn.classList.add('swiper-button-disabled');
-      prevBtn.classList.remove('swiper-button-disabled');
-    } else {
-      prevBtn.classList.remove('swiper-button-disabled');
-      nextBtn.classList.remove('swiper-button-disabled');
-    }
-    };
+    const projectsSwiperElement = document.querySelector('.swiper-box');
+    observerProjectsSection.observe(projectsSwiperElement);
+    document.addEventListener('keydown',  (evt) => {
+        if (!isInVPr) return;
+        if (evt.key === 'Tab') {
+            evt.preventDefault();
+            swiper.slideNext();
+        }
 
-
- 
-});
+    });
