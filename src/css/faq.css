@@ -8,8 +8,13 @@ h2 {
 }
 
 .just {
-    margin-top: 32px;
+    padding-top: 32px;
 }
+.faq{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
 
 .accordion-container {
     width: 100%;
@@ -151,6 +156,12 @@ h2 {
 
 
 @media only screen and (min-width: 768px) {
+
+.faq {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
     .just {
         width: 704px;
     }
@@ -186,15 +197,21 @@ h2 {
 
 
 @media only screen and (min-width: 1440px) {
+
+    .faq {
+            padding-top: 164px;
+            padding-bottom: 164px;
+        }
+
     .just {
         display: flex;
         width: 1376px;
-        min-height: 332px;
+       
     }
 
     .accordion-container {
         width: 50%;
-        height: 584px !important;
+       
     }
 
     .ac {
