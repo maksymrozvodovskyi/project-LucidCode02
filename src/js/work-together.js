@@ -1,11 +1,8 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
+import { openModal } from "./modal-window";
 
 const form = document.querySelector("#contactForm");
-const modal = document.querySelector("#modal");
-const closeModalBtn = document.querySelector(".modal-btn-close");
-const backdrop = document.querySelector("#modal");
-const body = document.body;
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -52,29 +49,8 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-// Modal
-function openModal() {
-  modal.classList.add("show");
-  body.style.overflow = "hidden";
-}
-
-function closeModal() {
-  modal.classList.remove("show");
-  body.style.overflow = "";
-}
-
-closeModalBtn.addEventListener("click", closeModal);
-
-backdrop.addEventListener("click", (e) => {
-  if (e.target === backdrop) closeModal();
-});
-
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeModal();
-});
-
-// Apply text truncation effect for comments input (visually)
 const commentInput = document.querySelector("#comments");
+
 commentInput.style.whiteSpace = "nowrap";
 commentInput.style.overflow = "hidden";
 commentInput.style.textOverflow = "ellipsis";
