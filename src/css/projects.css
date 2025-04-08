@@ -198,19 +198,22 @@ padding: 223px 130px 32px 64px;
 padding: 13px 32px;
 width: 141px;
 height: 45px;
-background: #ed3b44;
+background-color: #ed3b44;
 color: #fafafa;
 font-weight: 500;
 font-size: 16px;
 letter-spacing: -0.02em;
 border: none;
-cursor: pointer;
 margin-left: 32px;
 margin-bottom: 32px;
-cursor: pointer;}
+transition: background-color 0.3s ease;
+text-decoration: none;
+cursor: pointer;
+}
 
 @media only screen and (min-width:768px){
 .btn{
+display: inline-block;
 padding: 18px 50px;
 width: 177px;
 height: 55px;
@@ -218,8 +221,8 @@ margin-left: 64px;
 margin-bottom: 64px;
     }}
 
-.btn:hover, .btn:active{
-background: #E0373F;
+.btn:hover{
+background-color: #E0373F;
 }
 
 Дезактивація кнопок  
