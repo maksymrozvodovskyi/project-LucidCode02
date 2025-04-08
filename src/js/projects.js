@@ -8,44 +8,45 @@ import { Navigation,Keyboard } from 'swiper/modules';
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper('.swiper',
     {
-  
-    slidesPerView: 1,
+   
+      slidesPerView: 1,
       spaceBetween: 20,
-    
-    navigation: {
-      nextEl: '.slider-arrow-next',
-      prevEl: '.slider-arrow-prev',
-    },
-   
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-    },
-   
-  modules: [Navigation, Keyboard],
-  });
 
-  const nextBtn = document.querySelector('.slider-arrow.next');
-  const prevBtn = document.querySelector('.slider-arrow.prev');
+      navigation: {
+        nextEl: '.slider-arrow-next',
+        prevEl: '.slider-arrow-prev',
+      },
 
-function updateButtonStates() {
-   
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
+
+      modules: [Navigation, Keyboard],
+
+       on: {
+      init: updateArrowStates,
+      slideChange: updateArrowStates,
+    },
+    });
+
+  const nextBtn = document.querySelector('.slider-arrow-next');
+  const prevBtn = document.querySelector('.slider-arrow-prev');
+  
+  function updateArrowStates() {
 
     if (swiper.isBeginning) {
-      prevBtn.classList.remove('active');
+      prevBtn.classList.remove('swiper-button-disabled');
+      nextBtn.classList.add('swiper-button-disabled');
+    } else if (swiper.isEnd) {
+      nextBtn.classList.add('swiper-button-disabled');
+      prevBtn.classList.remove('swiper-button-disabled');
     } else {
-      prevBtn.classList.add('active');
+      prevBtn.classList.remove('swiper-button-disabled');
+      nextBtn.classList.remove('swiper-button-disabled');
     }
+    };
 
-    if (swiper.isEnd) {
-      nextBtn.classList.remove('active');
-    } else {
-      nextBtn.classList.add('active');
-    }
-  }
-  swiper.on('slideChange', updateButtonStates);
-  updateButtonStates();
+
  
 });
-
-

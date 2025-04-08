@@ -222,11 +222,12 @@ margin-bottom: 64px;
 background: #E0373F;
 }
 
-Дезактивація кнопок 
+Дезактивація кнопок  
 .swiper-button-disabled {
 opacity: 0.5;
-filter: grayscayle(100%);
-}
+filter: grayscale(100%);
+pointer-events: none;}
+
 .slider-buttons {
 display: flex;
 justify-content: center;
@@ -234,12 +235,12 @@ gap: 12px;
 margin-top: 32px;
 }
 
-.slider-arrow-next,
-.slider-arrow-prev {
+.slider-arrow-prev,
+.slider-arrow-next {
 background-color: transparent;
 padding: 8px;
-color: #a4c632;
-opacity: 0.5;
+color: #3b3b3b;
+opacity: 1 ;
 transition: opacity 0.3s ease;
 border: 1px solid rgba(250, 250, 250, 0.5);
 border-radius: 60px;
@@ -249,10 +250,12 @@ padding: 14px;
 pointer-events: auto;
 }
 
-.slider-arrow-next.active,.slider-arrow-prev.active{
+
+.slider-arrow-prev.swiper-button-disabled,
+.slider-arrow-next.swiper-button-disabled{
 background-color:transparent;
-color: #331672;
- opacity: 1;
+color: #fafafa;
+ opacity:0.5;
  pointer-events: auto;
 border: 1px solid rgba(250, 250, 250, 0.5);
 }
@@ -261,5 +264,6 @@ border: 1px solid rgba(250, 250, 250, 0.5);
 width:24px;
 height: 24px;
 stroke: rgba(250, 250, 250, 0.5);
-fill: transparent;
+fill: none;
+transition: stroke 0.3s ease;
 }
