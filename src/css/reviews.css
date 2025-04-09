@@ -3,7 +3,6 @@
 }
 
 .reviews-section h2 {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -35,14 +34,12 @@
   height: 48px;
   margin-bottom: 32px;
 }
-
-.reviews-section .review-name {
+.reviews-section .review-text .reviews-section .review-name {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #fafafa;
-  font-family: 'Inter Tight', sans-serif;
   margin-bottom: 8px;
 }
 
@@ -52,7 +49,6 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
-  font-family: 'Inter Tight', sans-serif;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
