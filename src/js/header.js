@@ -1,4 +1,3 @@
-`use strict`;
 
 const headerNav = document.querySelector('.header-nav-list');
 const headerMenuNav = document.querySelector('.js-menu-header');
