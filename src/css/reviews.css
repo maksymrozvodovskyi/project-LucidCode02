@@ -1,5 +1,4 @@
 .reviews-section {
-  background: #1c1d20;
   padding: 64px 0px;
 }
 
@@ -11,6 +10,7 @@
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
+  text-align: left;
 }
 
 .reviews-section .swiper-wrapper {
