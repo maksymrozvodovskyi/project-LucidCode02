@@ -136,12 +136,12 @@
 
 /* #region Modal */
 .header-modal {
-  width: 100%;
+  width: 370px;
   height: 100%;
 
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
 
   padding-top: 302px;
   padding-bottom: 64px;
