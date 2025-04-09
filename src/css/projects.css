@@ -29,22 +29,19 @@
   align-items: flex-start;
   background-color: #fafafa;
   border-radius: 24px 24px 0 0;
+  padding: 32px;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 768px) {
   .project-card {
     border-radius: 24px 0 0 24px;
-    height: 625px;
+    padding: 64px;
   }
 }
 
 .project-card,
 .card-black {
   flex: 1 1 50%;
-}
-
-.list-tags {
-  padding: 32px 32px 0 32px;
 }
 
 .tags {
@@ -59,9 +56,6 @@
 @media only screen and (min-width: 768px) {
   .tags {
     display: flex;
-    flex-direction: row;
-    width: 312px;
-    height: 55px;
   }
 }
 
@@ -69,32 +63,24 @@
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
   padding: 13px 18px;
-  width: 80px;
-  height: 45px;
 }
 
 .tag-js {
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
   padding: 13px 18px;
-  width: 57px;
-  height: 45px;
 }
 
 .tag-node {
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
   padding: 13px 18px;
-  width: 94px;
-  height: 45px;
 }
 
 .tag-git {
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
   padding: 13px 18px;
-  width: 63px;
-  height: 45px;
 }
 
 .card-black {
@@ -127,34 +113,29 @@ img {
 .name-project {
   font-size: 24px;
   color: #1c1d20;
-  padding: 96px 32px 32px 32px;
-  text-align: left;
+  line-height: 1.16;
+  margin-top: 96px;
+  letter-spacing: -0.03em;
 }
 
 @media only screen and (min-width: 768px) {
   .name-project {
     font-size: 44px;
     line-height: 1;
-    padding: 164px 146px 32px 64px;
+    margin-top: 164px;
+    max-width: 494px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .name-project {
-    padding: 223px 130px 32px 64px;
+    margin-top: 233px;
   }
-}
-
-.example {
-  padding-left: 32px;
-  padding-bottom: 32px;
 }
 
 .btn {
   border-radius: 60px;
   padding: 13px 32px;
-  width: 141px;
-  height: 45px;
   background-color: #ed3b44;
   color: #fafafa;
   font-size: 16px;
@@ -162,19 +143,12 @@ img {
   border: none;
   transition: background-color 0.3s ease;
   cursor: pointer;
+  margin-top: 32px;
 }
 
 @media only screen and (min-width: 768px) {
   .btn {
-    display: inline-block;
     padding: 18px 50px;
-    width: 177px;
-    height: 55px;
-  }
-
-  .example {
-    padding-left: 64px;
-    padding-bottom: 64px;
   }
 }
 
