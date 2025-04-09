@@ -7,13 +7,13 @@
   color: #fafafa;
   align-self: flex-start;
   max-width: 343px;
-  height: 250px;
+  margin: 0 auto;
 }
 
 .hero-container {
   padding: 281px 0 32px;
   background-image: url('../img/hero/mobile_1x.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 .hero-social-links {
@@ -73,7 +73,6 @@
   .hero-tittle {
     font-size: 90px;
     max-width: 632px;
-    height: 460px;
   }
 
   .hero-social-links-list {
@@ -126,7 +125,6 @@
     font-size: 90px;
     text-align: left;
     max-width: 1084px;
-    height: 270px;
   }
 
   @media only screen and (min-width: 1440px) and (min-resolution: 192dpi),
