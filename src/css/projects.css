@@ -60,25 +60,7 @@
   }
 }
 
-.tag-react {
-  border: 1px solid rgba(28, 29, 32, 0.2);
-  border-radius: 60px;
-  padding: 13px 18px;
-}
-
-.tag-js {
-  border: 1px solid rgba(28, 29, 32, 0.2);
-  border-radius: 60px;
-  padding: 13px 18px;
-}
-
-.tag-node {
-  border: 1px solid rgba(28, 29, 32, 0.2);
-  border-radius: 60px;
-  padding: 13px 18px;
-}
-
-.tag-git {
+.tag {
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
   padding: 13px 18px;
