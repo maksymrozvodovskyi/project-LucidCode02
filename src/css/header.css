@@ -1,0 +1,230 @@
+.header-container {
+  width: 100%;
+  position: absolute;
+  top: 32px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo-container {
+  display: flex;
+}
+
+.header-logo-container img {
+  border-radius: 18px;
+  margin-right: 8px;
+}
+
+.header-nav-container {
+  display: none;
+}
+
+.header-nav-order {
+  display: none;
+}
+
+.header-menu-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+}
+
+.header-icon-menu {
+  stroke: #fafafa;
+  stroke-width: 2px;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-logo-name {
+    font-size: 18px;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-menu-button {
+    display: none;
+  }
+
+  .header-nav-container {
+    display: flex;
+    position: relative;
+  }
+
+  .header-nav-button {
+    width: 60px;
+    height: 39px;
+    background: none;
+    border: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+    display: inline-block;
+  }
+
+  .header-nav-list.visually-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-nav-list {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: transparent;
+    width: 67px;
+    z-index: 555;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-nav-item:focus,
+  .header-nav-item:hover {
+    color: #ed3b44;
+  }
+
+  .header-nav-item {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+  }
+
+  .header-nav-list-items {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+  }
+
+  .header-nav-order {
+    display: block;
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+    background-color: #ed3b44;
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+
+    text-decoration: none;
+  }
+}
+
+/* #region Modal */
+.header-modal {
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding-top: 302px;
+  padding-bottom: 64px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  pointer-events: none;
+
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 999;
+  transform: translateX(100%);
+  transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+
+  background-image: url('/img/header/glasseffect_modal@1x.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header-modal {
+    background-image: url('/img/header/glasseffect_modal@2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.modal-menu-button {
+  position: absolute;
+  top: 32px;
+  right: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.modal-nav-order {
+  display: flex;
+  border-radius: 60px;
+  padding: 14px 31.5px;
+  width: 164px;
+  height: 45px;
+  background-color: #ed3b44;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.modal-nav-item:focus,
+.modal-nav-item:hover {
+  color: #ed3b44;
+}
+
+.modal-nav-item {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.modal-nav-list-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 12px;
+  margin: 0 auto;
+}
+
+.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+/* #endregion */
