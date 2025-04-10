@@ -1,5 +1,6 @@
 .work-together-section {
-  padding: 32px 0;
+  padding-top: 64px;
+  padding-bottom: 32px;
   background-image: image-set(
     url(../img/work-together/Portfolio/elements_mob@1x.png) 1x,
     url(../img/work-together/Portfolio/elements_mob@2x.png) 2x
@@ -17,7 +18,7 @@
 
 @media screen and (min-width: 768px) {
   .work-together-section {
-    padding: 88px 0 169px 0;
+    padding: 80px 0 169px 0;
     background-image: image-set(
       url(../img/work-together/Portfolio/elements_tab@1x.png) 1x,
       url(../img/work-together/Portfolio/elements_tab@2x.png) 2x
@@ -27,7 +28,6 @@
 
 @media screen and (min-width: 1440px) {
   .work-together-section {
-    padding: 80px 0 169px 0;
     background-image: image-set(
       url(../img/work-together/Portfolio/elements_desc@1x.png) 1x,
       url(../img/work-together/Portfolio/elements_desc@2x.png) 2x
