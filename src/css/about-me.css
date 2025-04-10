@@ -156,7 +156,13 @@
   background-color: #1c1d20;
   width: 40px;
   height: 40px;
+  /* transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
+
+/* .arrow-btn:hover,
+.arrow-btn:focus {
+  border: 1px solid #fafafa;
+} */
 
 .about-me-uparrow,
 .about-me-downarrow {
@@ -390,6 +396,11 @@
   content: none;
 }
 
+.accordion-container .ac .ac-trigger:hover,
+.accordion-container .ac .ac-trigger:focus {
+  border: 1px solid #fafafa;
+}
+
 .accordion-container .ac {
   margin-bottom: 0;
   border: none;
@@ -414,6 +425,7 @@
   width: 40px;
   height: 40px;
   padding: 0;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-me-swiper-list {
