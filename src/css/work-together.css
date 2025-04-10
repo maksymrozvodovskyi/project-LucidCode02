@@ -85,6 +85,8 @@
   text-transform: uppercase;
   color: #fafafa;
   display: inline;
+  display: flex;
+  gap: 8px;
 }
 
 .footer-titel-part {
