@@ -1,5 +1,5 @@
 .reviews-section {
-  padding: 64px 0px;
+  padding-top: 64px;
 }
 
 .reviews-section h2 {
@@ -110,7 +110,7 @@
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .reviews-section {
-    padding: 96px 0;
+    padding-top: 96px;
   }
 
   .reviews-buttons {
@@ -132,7 +132,7 @@
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .reviews-section {
-    padding: 164px 0;
+    padding-top: 164px;
   }
 
   .reviews-section .swiper-slide {
