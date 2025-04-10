@@ -130,7 +130,6 @@
   }
 }
 
-/* #region Modal */
 .header-modal {
   width: 370px;
   height: 100%;
@@ -223,4 +222,3 @@
   visibility: visible;
   pointer-events: auto;
 }
-/* #endregion */
