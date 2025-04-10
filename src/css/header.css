@@ -11,11 +11,11 @@
 
 .header-logo-container {
   display: flex;
+  gap: 8px;
 }
 
 .header-logo-container img {
   border-radius: 18px;
-  margin-right: 8px;
 }
 
 .header-nav-container {
