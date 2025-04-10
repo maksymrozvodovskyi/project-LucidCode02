@@ -56,7 +56,7 @@
 
 .hero-social-item:hover,
 .hero-email-item:hover,
-.hero-social-itemfocus,
+.hero-social-item:focus,
 .hero-email-item:focus {
   border: 1px solid #fafafa;
 }
