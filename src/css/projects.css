@@ -40,6 +40,13 @@
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .project-card {
+    border-radius: 24px 0 0 24px;
+    padding: 64px;
+  }
+}
+
 .project-card,
 .card-black {
   flex: 1 1 50%;
