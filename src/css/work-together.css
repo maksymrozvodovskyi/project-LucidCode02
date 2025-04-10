@@ -13,8 +13,8 @@
 
 .work-together-section .container {
   background-image: image-set(
-    url(../img/work-together/Portfolio/elements_mob@1x.png) 1x,
-    url(../img/work-together/Portfolio/elements_mob@2x.png) 2x
+    url(/img/work-together/Glass/elements_mob@1x.png) 1x,
+    url(/img/work-together/Glass/elements_mob@2x.png) 2x
   );
   background-position: right;
   background-repeat: repeat-y;
@@ -29,8 +29,8 @@
 
   .work-together-section .container {
     background-image: image-set(
-      url(../img/work-together/Portfolio/elements_tab@1x.png) 1x,
-      url(../img/work-together/Portfolio/elements_tab@2x.png) 2x
+      url(/img/work-together/Glass/elements_tab@1x.png) 1x,
+      url(/img/work-together/Glass/elements_tab@2x.png) 2x
     );
     background-position: right;
     background-repeat: repeat-y;
@@ -47,8 +47,8 @@
   .work-together-section .container {
     padding: 0 196px;
     background-image: image-set(
-      url(../img/work-together/Portfolio/elements_desc@1x.png) 1x,
-      url(../img/work-together/Portfolio/elements_desc@2x.png) 2x
+      url(/img/work-together/Glass/elements_desc@1x.png) 1x,
+      url(/img/work-together/Glass/elements_desc@2x.png) 2x
     );
     background-position: right;
     background-repeat: repeat-y;
