@@ -73,7 +73,6 @@
 
 .title-section {
   display: flex;
-  margin-bottom: 8px;
   gap: 8px;
 }
 
@@ -119,7 +118,6 @@
 
 @media screen and (min-width: 768px) {
   .title-section {
-    margin-bottom: 18px;
     gap: 20px;
   }
 }
@@ -283,7 +281,6 @@
   letter-spacing: -0.02em;
   color: #fafafa;
   transition: border-color 0.25s ease-in-out;
-  cursor: pointer;
 }
 
 .contact-item:hover,
