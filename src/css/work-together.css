@@ -275,23 +275,46 @@
   font-size: 14px;
   background-color: transparent;
   text-align: center;
-  padding: 10px 12px;
-  border: 1px solid #fafafa33;
-  border-radius: 60px;
   text-decoration: none;
   font-style: normal;
   letter-spacing: -0.02em;
   color: #fafafa;
+  display: flex;
+  align-items: center;
+}
+
+.contact-links {
+  max-height: 37px;
+}
+
+.contact-list {
+  height: 37px;
+}
+
+.contact-phone {
+  padding: 10px 12px;
+  border: 1px solid #fafafa33;
+  border-radius: 60px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-item:hover,
-.contact-item:focus {
+.contact-email {
+  padding: 10px 12px;
+  border: 1px solid #fafafa33;
+  border-radius: 60px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-phone:hover,
+.contact-phone:focus,
+.contact-email:hover,
+.contact-email:focus {
   border-color: #fafafa;
 }
 
 @media screen and (min-width: 768px) {
-  .contact-item {
+  .contact-phone,
+  .contact-email {
     font-size: 16px;
     padding: 18px 32px;
   }
