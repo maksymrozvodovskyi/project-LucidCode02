@@ -283,6 +283,7 @@
   letter-spacing: -0.02em;
   color: #fafafa;
   transition: border-color 0.25s ease-in-out;
+  cursor: pointer;
 }
 
 .contact-item:hover,
