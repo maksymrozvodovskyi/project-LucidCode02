@@ -65,16 +65,13 @@ const reviewsSwiper = new Swiper('.reviews-section .swiper', {
     enabled: true,
   },
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       allowTouchMove: true,
     },
-    // when window width is >=768px
     768: {
       slidesPerView: 2,
     },
-    // when window width is >= 1440px
     1440: {
       slidesPerView: 4,
       allowTouchMove: true,
