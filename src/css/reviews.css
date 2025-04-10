@@ -34,7 +34,8 @@
   height: 48px;
   margin-bottom: 32px;
 }
-.reviews-section .review-text .reviews-section .review-name {
+
+.review-name {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
