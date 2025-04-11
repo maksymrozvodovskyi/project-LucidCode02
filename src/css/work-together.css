@@ -87,24 +87,16 @@
   display: inline;
   display: flex;
   gap: 8px;
-}
-
-.footer-titel-part {
-  align-items: center;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: #fafafa;
-  font-size: 40px;
-  margin-bottom: 63px;
-  max-width: 194px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
 }
 
 @media screen and (min-width: 768px) {
   .footer-title {
     font-size: 64px;
     line-height: 64px;
+    max-width: 542px;
+    margin-bottom: 0;
   }
 
   .footer-titel-part {
