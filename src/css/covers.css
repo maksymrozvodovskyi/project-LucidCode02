@@ -142,3 +142,11 @@
     transform: translateX(-100%);
   }
 }
+
+.row--even {
+  animation: slide-left 20s linear infinite reverse;
+}
+
+.row--odd {
+  animation: slide-left 20s linear infinite;
+}
