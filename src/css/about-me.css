@@ -376,6 +376,12 @@
   height: 28px;
   background-color: #1c1d20;
   stroke: #3b3b3b;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-me-swiper-next-arrow:hover,
+.about-me-swiper-next-arrow:focus {
+  stroke: #fafafa;
 }
 
 @media only screen and (min-width: 768px) {
@@ -388,6 +394,10 @@
 /* #region Accordion reset */
 .accordion-container .ac .ac-trigger::after {
   content: none;
+}
+
+.accordion-container .ac .ac-trigger:hover {
+  border: 1px solid #fafafa;
 }
 
 .accordion-container .ac {
@@ -414,6 +424,7 @@
   width: 40px;
   height: 40px;
   padding: 0;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-me-swiper-list {
