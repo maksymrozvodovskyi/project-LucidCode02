@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const section = document.querySelector('.section-covers');
+  const section = document.querySelector('.covers');
   const evenRows = document.querySelectorAll('.row--even');
   const oddRows = document.querySelectorAll('.row--odd');
 

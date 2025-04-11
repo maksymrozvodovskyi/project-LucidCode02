@@ -84,15 +84,21 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  animation: slide-left 20s linear infinite;
 }
 
-.row--even {
-  animation-name: slide-left;
-}
-
+.row--even,
 .row--odd {
-  animation-name: slide-left;
+  animation: none; /* Вимкнено за замовчуванням */
+}
+
+.row--even.animate {
+  animation: slide-left 20s linear infinite reverse;
+  animation-delay: 1s;
+}
+
+.row--odd.animate {
+  animation: slide-left 20s linear infinite;
+  animation-delay: 1s;
 }
 
 .cover {
@@ -157,12 +163,4 @@
   100% {
     transform: translateX(-100%);
   }
-}
-
-.row--even {
-  animation: slide-left 20s linear infinite reverse;
-}
-
-.row--odd {
-  animation: slide-left 20s linear infinite;
 }
