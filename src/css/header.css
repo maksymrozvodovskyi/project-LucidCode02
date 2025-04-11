@@ -69,6 +69,11 @@
     text-decoration-skip-ink: none;
     color: #fafafa;
     display: inline-block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-nav-button:hover {
+    color: #e0373f;
   }
 
   .header-nav-list .visually-hidden {
