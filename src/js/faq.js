@@ -26,3 +26,4 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 const faqs = document.querySelectorAll('.faq-item');
+

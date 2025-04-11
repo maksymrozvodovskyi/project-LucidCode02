@@ -3,6 +3,7 @@
   src: url('../fonts/InterTight-Medium.ttf') format('woff2');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,11 +11,13 @@
   src: url('../fonts/InterTight-SemiBold.ttf') format('woff2');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
   font-family: 'Inter Tight', sans-serif;
   background-color: #1c1d20;
+  color: rgb(250, 250, 250);
 }
 
 html {

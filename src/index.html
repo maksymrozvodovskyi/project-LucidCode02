@@ -2,6 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="preload"
+      as="image"
+      href="/img/hero/mobile_1x.png"
+      media="(max-width: 767px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/img/hero/mobile_2x.png"
+      media="(max-width: 767px) and (min-resolution: 192dpi)"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="/img/hero/tablet_1x.png"
+      media="(min-width: 768px) and (max-width: 1439px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/img/hero/tablet_2x.png"
+      media="(min-width: 768px) and (max-width: 1439px) and (min-resolution: 192dpi)"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="/img/hero/desktop_1x.png"
+      media="(min-width: 1440px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/img/hero/desktop_2x.png"
+      media="(min-width: 1440px) and (min-resolution: 192dpi)"
+    />
+
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucid-Code</title>
@@ -15,11 +54,10 @@
     />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <load src="./partials/header.html" />
 
     <main>
       <!-- Loads the specified .html file -->
-      <load src="./partials/header.html" />
       <load src="./partials/hero.html" />
       <load src="./partials/about-me.html" />
       <load src="./partials/benefits.html" />
@@ -31,6 +69,6 @@
       <load src="./partials/modal-window.html" />
     </main>
 
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./main.js" defer></script>
   </body>
 </html>
