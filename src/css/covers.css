@@ -23,6 +23,8 @@
   height: 508px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 32px 0;
   margin: 0 auto;
 }
 
@@ -36,6 +38,7 @@
   .section-covers {
     height: 960px;
     max-width: 768px;
+    padding: 48px 0;
   }
 }
 
@@ -43,7 +46,16 @@
   .section-covers {
     height: 960px;
     max-width: 1440px;
+    padding: 82px 0;
   }
+}
+
+.section-covers .container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .covers-list-of-lists {
