@@ -1,10 +1,18 @@
 .about-me {
   padding-top: 64px;
+  padding-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-me {
+    padding-bottom: 48px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .about-me {
     padding-top: 96px;
+    padding-bottom: 82px;
   }
 }
 

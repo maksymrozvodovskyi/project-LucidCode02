@@ -1,5 +1,5 @@
 .work-together-section {
-  padding-top: 64px;
+  padding-top: 32px;
 }
 
 .work-together-background {
@@ -24,7 +24,7 @@
 
 @media screen and (min-width: 768px) {
   .work-together-section {
-    padding-top: 96px;
+    padding-top: 48px;
   }
 
   .work-together-section .container {
@@ -41,7 +41,7 @@
 
 @media screen and (min-width: 1440px) {
   .work-together-section {
-    padding-top: 164px;
+    padding-top: 82px;
   }
 
   .work-together-section .container {
